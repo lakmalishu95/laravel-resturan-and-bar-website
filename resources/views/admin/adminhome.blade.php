@@ -3,20 +3,19 @@
 
 
 
-
-    <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
     <head>
-        @include("admin.admincss");
+        @include("admin.admincss")
     </head>
 
     <body>
-        @include("admin.navbar");
+        @include("admin.navbar")
         
       
-        @include("admin.adminscript");
+        @include("admin.adminscript")
             
     </body>
 
-    </html>
+</html>

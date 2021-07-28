@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AdminController; 
 
 /*
 |--------------------------------------------------------------------------
@@ -17,9 +18,13 @@ use App\Http\Controllers\HomeController;
 Route::get('/', function () {
     return view('home');
 });
+Route::get("/users",[AdminController::class,"user"]);
+Route::get("/deleteuser/{id}",[AdminController::class,"deleteuser"]);
 
 Route::get("/home",[HomeController::class,"index"]);
+
 Route::get("/redirects",[HomeController::class,"redirects"]);
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function (){
     return view('dashboard');
 })->name('dashboard');
