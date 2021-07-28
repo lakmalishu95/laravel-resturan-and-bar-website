@@ -15,7 +15,11 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get("/home",[HomeController::class,"index"]);
+Route::get("/redirects",[HomeController::class,"redirects"]);
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function (){
+    return view('dashboard');
+})->name('dashboard');

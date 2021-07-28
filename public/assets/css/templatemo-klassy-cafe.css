@@ -1,10 +1,4 @@
-/*
 
-TemplateMo 558 Klassy Cafe
-
-https://templatemo.com/tm-558-klassy-cafe
-
-*/
 
 /* ---------------------------------------------
 Table of contents
@@ -120,12 +114,12 @@ body {
 }
 
 ::selection {
-  background: #fb5849;
+  background: #424242;
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #fb5849;
+  background: #4b4b4b;
   color: #fff;
 }
 
@@ -147,7 +141,7 @@ body {
 
 .main-white-button a {
   font-size: 13px;
-  color: #fb5849;
+  color: #444444;
   background-color: #fff;
   padding: 12px 25px;
   display: inline-block;
@@ -174,7 +168,7 @@ body {
 .section-heading h6 {
   position: relative;
   font-size: 15px;
-  color: #fb5849;
+  color: #424242;
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -188,7 +182,7 @@ body {
   position: absolute;
   left: 0;
   top: 8px;
-  background-color: #fb5849;
+  background-color: #504f4f;
 }
 
 .section-heading h2 {
@@ -223,11 +217,11 @@ header
 }
 
 .background-header .main-nav .nav li:hover a {
-  color: #fb5849!important;
+  color: #3a3939!important;
 }
 
 .background-header .nav li a.active {
-  color: #fb5849!important;
+  color: #575757!important;
 }
 
 .header-area {
@@ -285,8 +279,10 @@ header
 }
 
 .header-area .main-nav .nav li {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: red;
+  
 }
 
 .header-area .main-nav .nav li:last-child {
@@ -315,12 +311,12 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #fb5849!important;
+  color: #505050!important;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #fb5849!important;
+  color: #5c5c5c!important;
   opacity: 1;
 }
 
@@ -336,6 +332,7 @@ header
   color: #2a2a2a;
   position: absolute;
   right: 18px;
+  
   top: 12px;
 }
 
@@ -365,7 +362,7 @@ header
 .header-area .main-nav .nav li.submenu ul li a {
   opacity: 1;
   display: block;
-  background: #f7f7f7;
+  background: #f50505;
   color: #2a2a2a!important;
   padding-left: 20px;
   height: 40px;
@@ -382,7 +379,7 @@ header
 
 .header-area .main-nav .nav li.submenu ul li a:hover {
   background: #fff;
-  color: #fb5849!important;
+  color: #000000!important;
   padding-left: 25px;
 }
 
@@ -657,7 +654,7 @@ banner
 }
 
 #top .left-content {
-  background-image: url(../images/top-left-bg.jpg);
+  background-image: url(../images/hero-left.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -760,7 +757,7 @@ banner
   right:30px;
   width: 50px;
   height: 50px;
-  background-color: #fb5849;
+  background-color: #494949;
   border:0 none;
   line-height: 44px;
   border-radius: 50%;
@@ -789,7 +786,7 @@ banner
   left:30px;
   width: 50px;
   height: 50px;
-  background-color: #fb5849;
+  background-color: #494949;
   border:0 none;
   line-height: 44px;
   border-radius: 50%;
