@@ -84,21 +84,23 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>                                 
-                                                <td> xxx </td>
-                                                <td> $14,500 </td>
-                                                <td> xxxxd </td>
+                                        @foreach($data as $data)     
+                                            <tr>  
+                                                                          
+                                                <td> {{$data ->title}} </td>
+                                                <td> {{$data ->price}}</td>
+                                                <td> {{$data ->description}} </td>
                                                 <td>
-                                                <img src="assets/images/faces/face1.jpg" alt="image" />
-                                                <span class="pl-2">Henry Klein</span>
+                                                    <img src="/foodimage/{{$data->image}}" alt="image" />   
                                                 </td>
                                                 <td>
-                                                <div class="badge badge-outline-danger"> Delete </div>
+                                                <div  class="badge badge-outline-danger"><a href="{{url('/deletemenu',$data->id)}}"> Delete</a> </div>
                                                 </td>
                                                 <td>
                                                 <div class="badge badge-outline-success">Approved</div>
                                                 </td>
                                             </tr>
+                                            @endforeach
                                         </tbody>
                                     </table>
                                 </div>

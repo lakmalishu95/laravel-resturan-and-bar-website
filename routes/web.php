@@ -26,6 +26,7 @@ Route::get("/users",[AdminController::class,"user"]);
 Route::get("/deleteuser/{id}",[AdminController::class,"deleteuser"]);
 
 Route::get("/foodmenu",[AdminController::class,"foodmenu"]);
+Route::get("/deletemenu/{id}",[AdminController::class,"deletemenu"]);
 Route::post("/uploadfood",[AdminController::class,"upload"]);
 
 

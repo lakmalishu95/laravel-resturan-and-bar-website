@@ -14,19 +14,26 @@ class AdminController extends Controller
         $data=user::all();
         return view("admin.user",compact("data"));
     }
+    
     public function deleteuser($id)
     {
         $data=user::find($id);
         $data->delete();
-        return redirect()->back();
-
-        
+        return redirect()->back();       
     }
+
     public function foodmenu()
     {
-        
-        return view("admin.foodmenu");
+        $data = food::all();
+        return view("admin.foodmenu", compact("data"));
     }
+    public function deletemenu($id)
+    {
+        $data = food::find($id);
+        $data ->delete();
+        return redirect() ->back();
+    }
+
     public function upload(Request $request)
     {
         $data = new food;
@@ -49,4 +56,5 @@ class AdminController extends Controller
             return redirect() ->back();
 
     }
+    
 }
