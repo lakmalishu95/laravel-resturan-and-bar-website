@@ -15,14 +15,19 @@ use App\Http\Controllers\AdminController;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get("/",[HomeController::class,"index"]);
+
 Route::get('/food', function () {
     return view('food');
 });
+
+
 Route::get("/users",[AdminController::class,"user"]);
 Route::get("/deleteuser/{id}",[AdminController::class,"deleteuser"]);
+
+Route::get("/foodmenu",[AdminController::class,"foodmenu"]);
+Route::post("/uploadfood",[AdminController::class,"upload"]);
+
 
 Route::get("/home",[HomeController::class,"index"]);
 

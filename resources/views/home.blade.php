@@ -38,70 +38,70 @@
 
 
     <!-- ***** Header Area Start ***** -->
-                    
+
     <header class="header-area header-sticky">
-    
+
         <div class="container-fluid">
-        
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->  
-                        <span> 
-                        <a href="index.html" class="logo">
-                            <img src="assets/images/logo-new.jpg" class="mx-auto d-block"  style="width: 150px;  padding-top: 20px; padding-left: 20px;">
+
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <span>
+                        <a href="home" class="logo">
+                            <img src="assets/images/logo-new.jpg" class="mx-auto d-block" style="width: 150px;  padding-top: 20px; padding-left: 20px;">
                         </a></span>
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
-                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                            <li class="submenu">
-                                <a href="javascript:;">EMPLOYERS</a>
-                                <ul>
-                                    <li><a href="#">BAR</a></li>
-                                    <li><a href="#">RESTARAUNTS</a></li>
-                                </ul>
-                            </li>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                        <li class="submenu">
+                            <a href="javascript:;">EMPLOYERS</a>
+                            <ul>
+                                <li><a href="#">BAR</a></li>
+                                <li><a href="#">RESTARAUNTS</a></li>
+                            </ul>
+                        </li>
 
-                            <li class="scroll-to-section"><a href="#menu">Employee contact</a></li>
-                            <li class="scroll-to-section"><a href="#menu">Business contact</a></li>
+                        <li class="scroll-to-section"><a href="#menu">Employee contact</a></li>
+                        <li class="scroll-to-section"><a href="#menu">Business contact</a></li>
 
-                            <li class="submenu">
-                                <a href="javascript:;">EMPLOYEES </a>
-                                <ul>
-                                    <li><a href="#">bartenders</a></li>
-                                    <li><a href="#">waiters</a></li>
-                                    <li><a href="#">Waitresses </a></li>
-                                    
-                                </ul>
-                            </li>
-                            <li class="scroll-to-section"><a href="#menu">Our Memu </a></li>
-                            <li class="scroll-to-section"><a href="#chefs">Services</a></li>
-                            <li class="scroll-to-section"><a href="#reservation">3 Partners </a></li>
-                            <li>
-                                @if (Route::has('login'))
+                        <li class="submenu">
+                            <a href="javascript:;">EMPLOYEES </a>
+                            <ul>
+                                <li><a href="#">bartenders</a></li>
+                                <li><a href="#">waiters</a></li>
+                                <li><a href="#">Waitresses </a></li>
 
-                                @auth
-                            <li><a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 underline">dashboard</a></li>
+                            </ul>
+                        </li>
+                        <li class="scroll-to-section"><a href="#menu">Our Memu </a></li>
+                        <li class="scroll-to-section"><a href="#chefs">Services</a></li>
+                        <li class="scroll-to-section"><a href="#reservation">3 Partners </a></li>
+                        <li>
+                            @if (Route::has('login'))
 
-                            @else
-                            <li><a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Log in</a></li>
+                            @auth
+                        <li><a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 underline">dashboard</a></li>
 
-                            @if (Route::has('register'))
-                            <li><a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a></li>
-                            @endif
-                            @endauth
+                        @else
+                        <li><a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Log in</a></li>
 
-                            @endif
-                            </li>
+                        @if (Route::has('register'))
+                        <li><a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a></li>
+                        @endif
+                        @endauth
 
-                        </ul>
-                        <a class='menu-trigger'>
-                            <span></span>
-                        </a>
-                        <!-- ***** Menu End ***** -->
-                    </nav>
-                </div>
+                        @endif
+                        </li>
+
+                    </ul>
+                    <a class='menu-trigger'>
+                        <span></span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
             </div>
+        </div>
         </div>
     </header><br>
     <!-- ***** Header Area End ***** -->
@@ -133,7 +133,7 @@
                             <!-- Item -->
                             <div class="item">
                                 <div class="img-fill">
-                                    <img src="assets/images/coffee_mug_chair_124443_1024x768.jpg" height=800px alt="">                             
+                                    <img src="assets/images/coffee_mug_chair_124443_1024x768.jpg" height=800px alt="">
                                 </div>
                             </div>
                             <!-- // Item -->
@@ -197,8 +197,8 @@
 
     <!-- ***** Menu Area Starts ***** -->
 
-   @include("food")
-    
+    @include("food")
+
     <!-- ***** Menu Area Ends ***** -->
 
     <!-- ***** Chefs Area Starts ***** -->

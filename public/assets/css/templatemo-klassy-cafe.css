@@ -938,8 +938,8 @@ menu
 .info {
   position: relative;
   width: 100%;
-  background-color: #fb5849;
-  border: 1px solid #fb5849;
+  background-color: #686868;
+  border: none;
   transform: translateY(100%)
   translateY(120px)
   translateZ(0);
@@ -968,7 +968,7 @@ menu
   position: absolute;
   width: 70px;
   height: 70px;
-  background-color: #fb5849;
+  background-color: #3a3a3a;
   font-size: 20px;
   font-weight: 700;
   color: #fff;
@@ -1012,7 +1012,7 @@ menu
 #menu .owl-nav .owl-prev:before {
   display: inline-block;
   font-family: 'FontAwesome';
-  color: #fb5849;
+  color: #636363;
   font-size: 25px;
   font-weight: 700;
   content: '\f104';
@@ -1044,7 +1044,7 @@ menu
 #menu .owl-nav .owl-next:before {
   display: inline-block;
   font-family: 'FontAwesome';
-  color: #fb5849;
+  color: #616161;
   font-size: 25px;
   font-weight: 700;
   content: '\f105';
