@@ -33,6 +33,32 @@ class AdminController extends Controller
         $data ->delete();
         return redirect() ->back();
     }
+    public function updateview($id)
+    {
+        $data = food::find($id);
+        return view("admin.updateview",compact("data"));
+    }
+    public function update(Request $request ,$id)
+    {
+        $data =food::find($id);
+        
+        $image = $request->image;
+
+        $imagename = time().'.'.$image->getClientOriginalExtension();
+            $request->image->move('foodimage',$imagename);
+            $data->image = $imagename;
+            
+            
+            $data -> title = $request->title;
+
+            $data -> price = $request->price;
+
+            $data -> description = $request->description;
+
+            $data -> save();
+
+            return redirect() ->back('foodmenu');
+    }
 
     public function upload(Request $request)
     {
@@ -56,5 +82,6 @@ class AdminController extends Controller
             return redirect() ->back();
 
     }
+    
     
 }

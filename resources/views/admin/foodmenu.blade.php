@@ -97,7 +97,7 @@
                                                 <div  class="badge badge-outline-danger"><a href="{{url('/deletemenu',$data->id)}}"> Delete</a> </div>
                                                 </td>
                                                 <td>
-                                                <div class="badge badge-outline-success">Approved</div>
+                                                <div class="badge badge-outline-success"><a href="{{url('/updateview',$data->id)}}">Update</a></div>
                                                 </td>
                                             </tr>
                                             @endforeach
