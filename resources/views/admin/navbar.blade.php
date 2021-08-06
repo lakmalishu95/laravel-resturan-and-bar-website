@@ -18,7 +18,7 @@
                 <span class="menu-icon">
                     <i class="mdi mdi-playlist-play"></i>
                 </span>
-                <span class="menu-title">User</span>
+                <span class="menu-title">USERS</span>
             </a>
         </li>
         <li class="nav-item menu-items">
@@ -28,13 +28,13 @@
                 </span>
                 <span class="menu-title">FOODS</span>
             </a>
-        </li>
+        </li> 
         <li class="nav-item menu-items">
             <a class="nav-link" href="pages/charts/chartjs.html">
                 <span class="menu-icon">
                     <i class="mdi mdi-chart-bar"></i>
                 </span>
-                <span class="menu-title">CHEFS</span>
+                <span class="menu-title">C</span>
             </a>
         </li>
 
