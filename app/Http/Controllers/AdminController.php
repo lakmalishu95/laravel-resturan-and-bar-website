@@ -33,11 +33,14 @@ class AdminController extends Controller
         $data ->delete();
         return redirect() ->back();
     }
+    
     public function updateview($id)
     {
         $data = food::find($id);
         return view("admin.updateview",compact("data"));
     }
+    
+    
     public function update(Request $request ,$id)
     {
         $data =food::find($id);
@@ -60,6 +63,7 @@ class AdminController extends Controller
             return redirect() ->back('foodmenu');
     }
 
+    
     public function upload(Request $request)
     {
         $data = new food;
@@ -81,6 +85,27 @@ class AdminController extends Controller
 
             return redirect() ->back();
 
+    }
+
+
+    public function employedash()
+    {
+        
+        return view("admin.employedash");
+    }
+
+
+    public function employersdash()
+    {
+        
+        return view("admin.employersdash");
+    }
+
+
+    public function bcdash()
+    {
+        
+        return view("admin.bcdash");
     }
     
     

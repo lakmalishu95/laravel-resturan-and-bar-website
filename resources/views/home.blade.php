@@ -34,6 +34,7 @@
             <div></div>
         </div>
     </div>
+
     <!-- ***** Preloader End ***** -->
 
 
@@ -46,40 +47,62 @@
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                    
+                    <a href="home" class="logo">
+                        <img src="assets/images/logo-new.jpg" class="mx-auto d-block" style="width: 150px;  padding-top: 20px; padding-left: 20px;">
+                    </a>
+
+
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li lass="scroll-to-section">
-                        
-                        <a href="home" class="logo">
-                            <img src="assets/images/logo-new.jpg" class="mx-auto d-block" style="width: 150px;  padding-top: 20px; padding-left: 20px;">
-                        </a>
-                        </li>
-                        <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                        <li class="scroll-to-section"><a href="{{ url('/home')}}" class="active">Home</a></li>
                         <li class="submenu">
-                            <a href="javascript:;">EMPLOYERS</a>
+                            <a href="{{url('/employers')}}">EMPLOYERS</a>
                             <ul>
-                                <li><a href="#">BAR</a></li>
-                                <li><a href="#">RESTARAUNTS</a></li>
+                                <li><a href="{{ url('/employecontact') }}">BAR</a></li>
+                                <li><a href="{{ url('/employecontact') }}">RESTARAUNTS</a></li>
                             </ul>
                         </li>
-
-                        <li class="scroll-to-section"><a href="#menu">Employee contact</a></li>
-                        <li class="scroll-to-section"><a href="#menu">Business contact</a></li>
-
                         <li class="submenu">
-                            <a href="javascript:;">EMPLOYEES </a>
+                            <a href="#">contact </a>
                             <ul>
-                                <li><a href="#">bartenders</a></li>
-                                <li><a href="#">waiters</a></li>
-                                <li><a href="#">Waitresses </a></li>
+                                <li><a href="{{ url('/employecontact') }}">Employee contact</a></li>
+                                <li><a href="{{ url('/businesscontact') }}">Business contact</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="{{ url('/businessmanagement') }}">Business Management </a>
+                            <ul>
+                                <li><a href="{{ url('/employecontact') }}">Business Starter Packages</a></li>
+                                <li><a href="{{ url('/employecontact') }}">Consultation</a></li>
+                                <li><a href="{{ url('/employecontact') }}">Merchandise</a></li>
+                                <li><a href="{{ url('/employecontact') }}">Contracts</a></li>
+                                <li><a href="{{ url('/employecontact') }}">Custom Request</a></li>
 
                             </ul>
                         </li>
-                        <li class="scroll-to-section"><a href="#menu">Our Memu </a></li>
-                        <li class="scroll-to-section"><a href="#chefs">Services</a></li>
-                        <li class="scroll-to-section"><a href="#reservation">3 Partners </a></li>
+                        <li class="submenu">
+                            <a href="{{ url('/employees')}}">EMPLOYEES </a>
+                            <ul>
+                                <li><a href="{{ url('/employecontact') }}">bartenders</a></li>
+                                <li><a href="{{ url('/employecontact') }}">waiters</a></li>
+                                <li><a href="{{ url('/employecontact') }}">Waitresses </a></li>
+                                <li><a href="{{ url('/employecontact') }}">Food Industry</a></li>
+                                <li><a href="{{ url('/employecontact') }}">OIL an GAS </a></li>
+                                <li><a href="{{ url('/employecontact') }}">Nat Disaster</a></li>
+                                <li><a href="{{ url('/employecontact') }}">New Page</a></li>
+                                <li><a href="{{ url('/employecontact') }}">New Page </a></li>
+                                <li><a href="{{ url('/employecontact') }}">New Page</a></li>
+                                <li><a href="{{ url('/employecontact') }}">New Page </a></li>
+                                <li><a href="{{ url('/employecontact') }}">New Page</a></li>
+                                <li><a href="{{ url('/employecontact') }}">New Page </a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="{{ url('/ourmenu') }}">Our Memu </a></li>
+                        <li><a href="{{ url('/service') }}">Services</a></li>
+                        <li><a href="{{ url('/ourmission') }}">Our Mission</a></li>
+                        <li><a href="{{ url('/partners') }}">3 Partners </a></li>
                         <li>
                             @if (Route::has('login'))
 
@@ -105,8 +128,8 @@
                 </nav>
             </div>
         </div>
-        
-        
+
+
     </header><br>
     <!-- ***** Header Area End ***** -->
 
@@ -164,10 +187,10 @@
     <!-- ***** Main Banner Area End ***** -->
 
     <!-- ***** seekers Area Starts ***** -->
-    <section class="section" id="about" >
+    <section class="section" id="about">
         <div class="container">
             <div class="row">
-            <div class="col-lg-6 col-md-6 col-xs-12">
+                <div class="col-lg-6 col-md-6 col-xs-12">
                     <div class="right-content">
                         <div class="thumb">
                             <img style="padding-right: 100px;" src="assets/images/Job-Seeker.png" alt="">
@@ -176,17 +199,17 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-xs-12">
                     <div class="left-text-content">
-                        <div class="section-heading">                          
+                        <div class="section-heading">
                             <h2>for job seekers</h2>
                         </div>
-                        <h5>Create your account and see how our <br>technology makes the process <br>simple so the 
+                        <h5>Create your account and see how our <br>technology makes the process <br>simple so the
                             focus is always<br> on you, the individual.
-                        </h5><br>                     
+                        </h5><br>
                         <div class=" scroll-to-section">
                             <button type="button" class="btn btn-primary">Let's do this</button>
-                        </div>                        
+                        </div>
                     </div>
-                </div>       
+                </div>
             </div>
         </div>
     </section>
@@ -198,12 +221,12 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-xs-12">
                     <div class="left-text-content">
-                        <div class="section-heading" >                         
+                        <div class="section-heading">
                             <h2>For Employers.</h2>
                         </div>
                         <h5>See how we harness the power of<br> technology to focus on your business<br> needs.</h5><br>
-                        <button type="button" class="btn btn-primary">Learn more</button>
-                        <div class="row">                          
+                        <button type="button" class="btn btn-primary"> <a href="{{ url("/employecontact") }}">Learn more</a></button>
+                        <div class="row">
                         </div>
                     </div>
                 </div>
@@ -222,7 +245,7 @@
     <section class="section" id="about" style="background-image: url('assets/images/novabell_plytka_podlogowa_drewnopodobna_rektyfikowana_29_8x119_8cm_eco_dream_quercia.jpg'); color:aliceblue">
         <div class="container">
             <div class="row">
-            <div class="col-lg-6 col-md-6 col-xs-12">
+                <div class="col-lg-6 col-md-6 col-xs-12">
                     <div class="right-content">
                         <div class="thumb">
                             <img style="padding-right: 100px;" src="assets/images/Business-Management-Consultancy-Services-in-Sri-lanka.png" alt=""><br><br>
@@ -231,38 +254,47 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-xs-12">
                     <div class="left-text-content">
-                        <div class="section-heading" >                         
+                        <div class="section-heading">
                             <h2>BUSINESS MANAGEMENT</h2>
                         </div>
                         <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae numquam hic amet molestias accusamus reiciendis minus recusandae consequuntur animi optio natus
-                             consequatur debitis magnam, exercitationem dignissimos iure dolore, quidem quis?</h5><br>
-                        <button type="button" class="btn btn-primary">Learn more</button><br><br>
-                        <div class="row">                          
+                            consequatur debitis magnam, exercitationem dignissimos iure dolore, quidem quis?</h5><br>
+                        <button type="button" class="btn btn-primary"><a href="{{ url("/businesscontact") }}">Learn more</a></button><br><br>
+                        <div class="row">
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
-    </section>
+    </section><br><br>
     <!-- ***** business managment Area Ends ***** -->
 
-    <!-- ***** Menu Area Starts ***** -->
+    <div class="container">
+        <!-- Gallery -->
+        <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
 
-    @include("food")
+                <img src="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
+            </div>
 
-    <!-- ***** Menu Area Ends ***** -->
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img src="https://mdbootstrap.com/img/Photos/Vertical/mountain2.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
 
-    @include("reservation")
-    
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
+            </div>
 
-    
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
 
-    
+                <img src="https://mdbootstrap.com/img/Photos/Vertical/mountain3.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
+            </div>
+        </div>
+    </div>
+    <!-- Gallery -->
 
-    
 
-    
 
     <!-- ***** Footer Start ***** -->
     <footer>
@@ -287,7 +319,7 @@
                     <div class="left-text-content">
                         <p>designed by
 
-                            <br><a href="https://www.fiverr.com/kevinkrish95?public_mode=true" >kevinkrish</a>
+                            <br><a href="https://www.fiverr.com/kevinkrish95?public_mode=true">kevinkrish</a>
                     </div>
                 </div>
             </div>

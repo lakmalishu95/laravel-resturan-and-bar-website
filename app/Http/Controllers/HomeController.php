@@ -17,6 +17,13 @@ class HomeController extends Controller
         $data = food::all();
         return view("home",compact("data"));
     }
+
+    public function ourmenu()
+    {
+        $data = food::all();
+        return view("ourmenu",compact("data"));
+    }
+    
     public function redirects()
     {
         $data = food::all();

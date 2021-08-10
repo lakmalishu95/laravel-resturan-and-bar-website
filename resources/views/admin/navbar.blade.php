@@ -30,11 +30,27 @@
             </a>
         </li> 
         <li class="nav-item menu-items">
-            <a class="nav-link" href="pages/charts/chartjs.html">
+            <a class="nav-link" href="{{ url('/employedash')}}">
                 <span class="menu-icon">
                     <i class="mdi mdi-chart-bar"></i>
                 </span>
-                <span class="menu-title">C</span>
+                <span class="menu-title">EMPLOYEE</span>
+            </a>
+        </li>
+        <li class="nav-item menu-items">
+            <a class="nav-link" href="{{ url('/employersdash')}}">
+                <span class="menu-icon">
+                    <i class="mdi mdi-chart-bar"></i>
+                </span>
+                <span class="menu-title">EMPLOYERS</span>
+            </a>
+        </li>
+        <li class="nav-item menu-items">
+            <a class="nav-link" href="{{ url('/bcdash')}}">
+                <span class="menu-icon">
+                    <i class="mdi mdi-chart-bar"></i>
+                </span>
+                <span class="menu-title">BUSINESS CONTACT</span>
             </a>
         </li>
 
