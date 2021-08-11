@@ -45,12 +45,16 @@
         <div class="container-fluid">
 
             <div class="col-12">
+
+
+
                 <nav class="main-nav">
+
                     <!-- ***** Logo Start ***** -->
+
                     <a href="home" class="logo">
                         <img src="assets/images/logo-new.jpg" class="mx-auto d-block" style="width: 150px;  padding-top: 20px; padding-left: 20px;">
-                    </a>
-
+                    </a>    
 
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
@@ -274,21 +278,51 @@
         <!-- Gallery -->
         <div class="row">
             <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
+                <img src="assets/images/image-new/1.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
 
-                <img src="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
+                <img src="assets/images/image-new/2.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
             </div>
 
             <div class="col-lg-4 mb-4 mb-lg-0">
-                <img src="https://mdbootstrap.com/img/Photos/Vertical/mountain2.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
+                <img src="assets/images/image-new/3.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
 
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
+                <img src="assets/images/image-new/4.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
             </div>
 
             <div class="col-lg-4 mb-4 mb-lg-0">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
+                <img src="assets/images/image-new/5.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
 
-                <img src="https://mdbootstrap.com/img/Photos/Vertical/mountain3.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
+                <img src="assets/images/image-new/6.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img src="assets/images/image-new/7.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
+
+                <img src="assets/images/image-new/8.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img src="assets/images/image-new/9.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
+
+                <img src="assets/images/image-new/10.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img src="assets/images/image-new/11.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
+
+                <img src="assets/images/image-new/12.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img src="assets/images/image-new/13.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
+
+                <img src="assets/images/image-new/14.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img src="assets/images/image-new/15.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
+
+                <img src="assets/images/image-new/16.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img src="assets/images/image-new/17.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
+
+                <img src="assets/images/image-new/18.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
             </div>
         </div>
     </div>

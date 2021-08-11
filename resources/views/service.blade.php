@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -21,6 +22,7 @@
 
     <link rel="stylesheet" href="assets/css/lightbox.css">
 </head>
+
 <body>
 
     <!-- ***** Preloader End ***** -->
@@ -35,11 +37,11 @@
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                        <a href="home" class="logo">
-                            <img src="assets/images/logo-new.jpg" class="mx-auto d-block" style="width: 150px;  padding-top: 20px; padding-left: 20px;">
-                        </a>
+                    <a href="home" class="logo">
+                        <img src="assets/images/logo-new.jpg" class="mx-auto d-block" style="width: 150px;  padding-top: 20px; padding-left: 20px;">
+                    </a>
 
-                        
+
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
@@ -66,7 +68,7 @@
                                 <li><a href="{{ url('/employecontact') }}">Merchandise</a></li>
                                 <li><a href="{{ url('/employecontact') }}">Contracts</a></li>
                                 <li><a href="{{ url('/employecontact') }}">Custom Request</a></li>
-                           
+
                             </ul>
                         </li>
                         <li class="submenu">
@@ -84,7 +86,7 @@
                                 <li><a href="{{ url('/employecontact') }}">New Page </a></li>
                                 <li><a href="{{ url('/employecontact') }}">New Page</a></li>
                                 <li><a href="{{ url('/employecontact') }}">New Page </a></li>
-                                
+
                             </ul>
                         </li>
                         <li class="submenu"><a href="{{ url('/ourmenu') }}">Our Memu </a></li>
@@ -116,65 +118,66 @@
                 </nav>
             </div>
         </div>
-        
-        
+
+
     </header><br><br>
 
     <div class="section" id="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-xs-12">
-                <div class="left-text-content">
-                    <div class="section-heading">
-                        <h2>Business Management</h2><hr>
-                        <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or
-                             double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page.
-                             I’m a great place for you to tell a story and let your users know a little more about you.
-                            This is a great space to write long text about your company and your services. You can use
-                             this space to go into a little more detail about your company. Talk about your team and what
-                              services you provide. Tell your visitors the story of how you came up with the idea for your
-                               business and what makes you different from your competitors. Make your company stand out and
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-xs-12">
+                    <div class="left-text-content">
+                        <div class="section-heading">
+                            <h2>SERVICES</h2>
+                            <hr>
+                            <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or
+                                double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page.
+                                I’m a great place for you to tell a story and let your users know a little more about you.
+                                This is a great space to write long text about your company and your services. You can use
+                                this space to go into a little more detail about your company. Talk about your team and what
+                                services you provide. Tell your visitors the story of how you came up with the idea for your
+                                business and what makes you different from your competitors. Make your company stand out and
                                 show your visitors who you are.</p>
-                    </div>            
-                </div>
-                <div class="row">
-                    <div class="row row-cols-1 row-cols-md-3 g-4">
-                        <div class="col">
-                            <div class="card">
-                            <img src="assets/images/03.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
-                            </div>
                         </div>
-                        <div class="col">
-                            <div class="card">
-                            <img src="assets/images/03.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="row">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="assets/images/03.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="assets/images/03.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="assets/images/03.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                                    </div>
+                                </div>
+                            </div><br>
                         </div>
-                        <div class="col">
-                            <div class="card">
-                            <img src="assets/images/03.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                            </div>
-                            </div>
-                        </div><br>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
 
-<footer>
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-xs-12">
@@ -196,7 +199,7 @@
                     <div class="left-text-content">
                         <p>designed by
 
-                            <br><a href="https://www.fiverr.com/kevinkrish95?public_mode=true" >kevinkrish</a>
+                            <br><a href="https://www.fiverr.com/kevinkrish95?public_mode=true">kevinkrish</a>
                     </div>
                 </div>
             </div>
@@ -205,4 +208,5 @@
 
 
 </body>
+
 </html>

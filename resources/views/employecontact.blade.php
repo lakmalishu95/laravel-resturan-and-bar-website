@@ -179,12 +179,9 @@
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-12 col-sm-12">
-                                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" placholder="cose">
-                                        <option selected>Choose licenses ?</option>
-                                        <option value="1">Food handlers</option>
-                                        <option value="2">bartenders licenses</option>
-                                        <option value="3">Relevant licenses</option>
-                                    </select>
+                                <fieldset>
+                                        <input name="fiald" type="text" id="fiald" placeholder="career field/ job field" required="">
+                                    </fieldset>
                                 </div>
 
                                 <div class="col-lg-12 col-sm-12">
@@ -199,7 +196,7 @@
                                 </div>
                                 <div class="col-lg-12 col-sm-12">
                                     <fieldset>
-                                        <input name="fiald" rows="6" type="text" id="fiald" placeholder="Can you provide one or more referances? That we can contact" placeholder="Can you provide one or more referances? That we can contact" required="">
+                                        <input name="fiald" rows="6" type="text" class="form-control" id="validationDefault01" value="Mark"  placeholder="Can you provide one or more referances? That we can contact" placeholder="Can you provide one or more referances? That we can contact" required>
                                     </fieldset>
                                 </div>
 

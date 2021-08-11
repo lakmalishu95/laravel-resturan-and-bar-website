@@ -224,7 +224,7 @@ header
 }
 
 .header-area {
-  background-color: rgb(73, 73, 73);
+  background-color: rgb(59, 59, 59);
   position: absolute;
   top: 0px;
   left: 0px;
@@ -243,7 +243,8 @@ header
 }
 
 .header-area .main-nav .logo {
-  line-height: 100px;
+  line-height: 10px;
+  
   color: #fff;
   font-size: 28px;
   font-weight: 700;
