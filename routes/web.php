@@ -57,6 +57,76 @@ Route::get('/partners', function () {
 });
 
 
+//subpages
+ 
+
+//employers sub pages
+
+Route::get('/bar', function () {
+    return view("subpages.employers.bar");
+});
+
+Route::get('/restaraunts', function () {
+    return view('subpages.employers.restaraunts');
+});
+
+
+// business management sub pages
+
+Route::get('/business-starter-packages', function () {
+    return view('subpages.bm.bsp');
+});
+Route::get('/consultation', function () {
+    return view('subpages.bm.consultation');
+});
+Route::get('/contracts', function () {
+    return view('subpages.bm.contracts');
+});
+Route::get('/merchandise', function () {
+    return view('subpages.bm.merchandise');
+});
+Route::get('/customerequest', function () {
+    return view('subpages.bm.customrequest');
+});
+
+
+// employees subpages
+
+Route::get('/foodindustry', function () {
+    return view('subpages.employees.foodindustry');
+});
+Route::get('/residentialworkers', function () {
+    return view('subpages.employees.rw');
+});
+Route::get('/commercialworkers', function () {
+    return view('subpages.employees.cw');
+});
+Route::get('/trades', function () {
+    return view('subpages.employees.trades');
+});
+Route::get('/natdisaster', function () {
+    return view('subpages.employees.nd');
+});
+Route::get('/welderscommercial', function () {
+    return view('subpages.employees.wc');
+});
+Route::get('/gallary', function () {
+    return view('subpages.employees.gallary');
+});
+Route::get('/bleudonahue', function () {
+    return view('subpages.employees.bd');
+});
+
+Route::get('/newpage', function () {
+    return view('subpages.employees.newpage');
+});
+
+
+
+
+
+
+
 //dash board
 
 

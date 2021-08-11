@@ -33,6 +33,7 @@
             <div></div>
             <div></div>
         </div>
+    
     </div>
 
     <!-- ***** Preloader End ***** -->
@@ -63,8 +64,8 @@
                         <li class="submenu">
                             <a href="{{url('/employers')}}">EMPLOYERS</a>
                             <ul>
-                                <li><a href="{{ url('/employecontact') }}">BAR</a></li>
-                                <li><a href="{{ url('/employecontact') }}">RESTARAUNTS</a></li>
+                                <li><a href="{{ url('/bar') }}">BAR</a></li>
+                                <li><a href="{{ url('/restaraunts') }}">RESTARAUNTS</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
@@ -77,30 +78,26 @@
                         <li class="submenu">
                             <a href="{{ url('/businessmanagement') }}">Business Management </a>
                             <ul>
-                                <li><a href="{{ url('/employecontact') }}">Business Starter Packages</a></li>
-                                <li><a href="{{ url('/employecontact') }}">Consultation</a></li>
-                                <li><a href="{{ url('/employecontact') }}">Merchandise</a></li>
-                                <li><a href="{{ url('/employecontact') }}">Contracts</a></li>
-                                <li><a href="{{ url('/employecontact') }}">Custom Request</a></li>
+                                <li><a href="{{ url('/business-starter-packages') }}">Business Starter Packages</a></li>
+                                <li><a href="{{ url('/consultation') }}">Consultation</a></li>
+                                <li><a href="{{ url('/merchandise') }}">Merchandise</a></li>
+                                <li><a href="{{ url('/contracts') }}">Contracts</a></li>
+                                <li><a href="{{ url('/customerequest') }}">Custom Request</a></li>
 
                             </ul>
                         </li>
                         <li class="submenu">
                             <a href="{{ url('/employees')}}">EMPLOYEES </a>
                             <ul>
-                                <li><a href="{{ url('/employecontact') }}">bartenders</a></li>
-                                <li><a href="{{ url('/employecontact') }}">waiters</a></li>
-                                <li><a href="{{ url('/employecontact') }}">Waitresses </a></li>
-                                <li><a href="{{ url('/employecontact') }}">Food Industry</a></li>
-                                <li><a href="{{ url('/employecontact') }}">OIL an GAS </a></li>
-                                <li><a href="{{ url('/employecontact') }}">Nat Disaster</a></li>
-                                <li><a href="{{ url('/employecontact') }}">New Page</a></li>
-                                <li><a href="{{ url('/employecontact') }}">New Page </a></li>
-                                <li><a href="{{ url('/employecontact') }}">New Page</a></li>
-                                <li><a href="{{ url('/employecontact') }}">New Page </a></li>
-                                <li><a href="{{ url('/employecontact') }}">New Page</a></li>
-                                <li><a href="{{ url('/employecontact') }}">New Page </a></li>
-
+                                <li><a href="{{ url('/foodindustry') }}">Food Industry</a></li>
+                                <li><a href="{{ url('/residentialworkers') }}">Residential Workers</a></li>
+                                <li><a href="{{ url('/commercialworkers') }}">Commercial Workers </a></li>
+                                <li><a href="{{ url('/trades') }}">Trades </a></li>
+                                <li><a href="{{ url('/natdisaster') }}">Nat Disaster</a></li>
+                                <li><a href="{{ url('/welderscommercial') }}">Welders Commercial </a></li>
+                                <li><a href="{{ url('/gallary') }}">Gallary</a></li>
+                                <li><a href="{{ url('/bleudonahue') }}">Bleu Donahue</a></li>
+                                <li><a href="{{ url('/newpage') }}">New Page </a></li>
                             </ul>
                         </li>
                         <li><a href="{{ url('/ourmenu') }}">Our Memu </a></li>
@@ -344,9 +341,12 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4">                  
                     <div class="logo">
                         <a href="index.html"><img style="width: 100px;" src="assets/images/logo/Attachment_1627657541.jpeg" alt=""></a>
+                    </div>
+                    <div class="logo">
+                        <a style="color:black" href="cajunstaffing.com">cajunstaffing 2021 llc</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-xs-12">
