@@ -151,7 +151,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="contact-form">
-                        <form id="contact" action="" method="post">
+                        <form id="contact" action="{{url('/businesscontact',$data->id)}}" method="post" enctype="multipart/form-data">
 
                             @csrf
 
@@ -161,32 +161,32 @@
                                 </div>
                                 <div class="col-lg-6 col-sm-12">
                                     <fieldset>
-                                        <input name="fname" type="text" id="fname" placeholder="first Name :" required="">
+                                        <input name="fname" type="text" id="fname" placeholder="first Name :" value="{{$data->fname}}" required="">
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-6 col-sm-12">
                                     <fieldset>
-                                        <input name="lname" type="text" id="lname" placeholder="last Name :" required="">
+                                        <input name="lname" type="text" id="lname" placeholder="last Name :" value="{{$data->lname}}" required="">
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-12 col-sm-12">
                                     <fieldset>
-                                        <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Enter Your Email :" required="">
+                                        <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Enter Your Email :" value="{{$data->bname}}" required="">
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-12 col-sm-12">
                                     <fieldset>
-                                        <input name="bname" type="text" id="bname" placeholder="Enter Business name :" required="">
+                                        <input name="bname" type="text" id="bname" placeholder="Enter Business name :" value="{{$data->category}}" required="">
                                     </fieldset>
                                 </div>
                                 <div class="col-md-12 col-sm-12">
-                                    <input type="text" name="guest" placeholder="Enter Business Category :">
+                                    <input type="text" name="guest" placeholder="Enter Business Category :" value="{{$data->eorc}}">
                                     
                                 </div>
                                 
                                 <div class="col-lg-12 col-sm-12">
                                 
-                                        <input name="evebt" type="text" id="event" placeholder="Event or business :" required="">
+                                        <input name="evebt" type="text" id="event" placeholder="Event or business :" value="{{$data->helpful}}" required="">
                     
                                 </div>
                                 

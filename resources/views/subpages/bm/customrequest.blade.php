@@ -31,30 +31,29 @@
     <!-- ***** Header Area Start ***** -->
 
     <header class="header-area header-sticky">
-
         <div class="container-fluid">
-
             <div class="col-12">
                 <nav class="main-nav">
+
                     <!-- ***** Logo Start ***** -->
+
                     <a href="home" class="logo">
                         <img src="assets/images/logo-new.jpg" class="mx-auto d-block" style="width: 150px;  padding-top: 20px; padding-left: 20px;">
-                    </a>
-
+                    </a>    
 
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li class="scroll-to-section"><a href="{{ url('/home')}}" class="active">Home</a></li>
+                        <li class="scroll-to-section"><a href="{{ url('/home')}}" >Home</a></li>
                         <li class="submenu">
                             <a href="{{url('/employers')}}">EMPLOYERS</a>
                             <ul>
-                                <li><a href="{{ url('/employecontact') }}">BAR</a></li>
-                                <li><a href="{{ url('/employecontact') }}">RESTARAUNTS</a></li>
+                                <li><a href="{{ url('/bar') }}">BAR</a></li>
+                                <li><a href="{{ url('/restaraunts') }}">RESTARAUNTS</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
-                            <a href="{{ url('/employecontact') }}">contact </a>
+                            <a href="#">contact </a>
                             <ul>
                                 <li><a href="{{ url('/employecontact') }}">Employee contact</a></li>
                                 <li><a href="{{ url('/businesscontact') }}">Business contact</a></li>
@@ -63,36 +62,32 @@
                         <li class="submenu">
                             <a href="{{ url('/businessmanagement') }}">Business Management </a>
                             <ul>
-                                <li><a href="{{ url('/employecontact') }}">Business Starter Packages</a></li>
-                                <li><a href="{{ url('/employecontact') }}">Consultation</a></li>
-                                <li><a href="{{ url('/employecontact') }}">Merchandise</a></li>
-                                <li><a href="{{ url('/employecontact') }}">Contracts</a></li>
-                                <li><a href="{{ url('/employecontact') }}">Custom Request</a></li>
+                                <li><a href="{{ url('/business-starter-packages') }}">Business Starter Packages</a></li>
+                                <li><a href="{{ url('/consultation') }}">Consultation</a></li>
+                                <li><a href="{{ url('/merchandise') }}">Merchandise</a></li>
+                                <li><a href="{{ url('/contracts') }}">Contracts</a></li>
+                                <li><a href="{{ url('/customerequest') }}">Custom Request</a></li>
 
                             </ul>
                         </li>
                         <li class="submenu">
                             <a href="{{ url('/employees')}}">EMPLOYEES </a>
                             <ul>
-                                <li><a href="{{ url('/employecontact') }}">bartenders</a></li>
-                                <li><a href="{{ url('/employecontact') }}">waiters</a></li>
-                                <li><a href="{{ url('/employecontact') }}">Waitresses </a></li>
-                                <li><a href="{{ url('/employecontact') }}">Food Industry</a></li>
-                                <li><a href="{{ url('/employecontact') }}">OIL an GAS </a></li>
-                                <li><a href="{{ url('/employecontact') }}">Nat Disaster</a></li>
-                                <li><a href="{{ url('/employecontact') }}">New Page</a></li>
-                                <li><a href="{{ url('/employecontact') }}">New Page </a></li>
-                                <li><a href="{{ url('/employecontact') }}">New Page</a></li>
-                                <li><a href="{{ url('/employecontact') }}">New Page </a></li>
-                                <li><a href="{{ url('/employecontact') }}">New Page</a></li>
-                                <li><a href="{{ url('/employecontact') }}">New Page </a></li>
-
+                                <li><a href="{{ url('/foodindustry') }}">Food Industry</a></li>
+                                <li><a href="{{ url('/residentialworkers') }}">Residential Workers</a></li>
+                                <li><a href="{{ url('/commercialworkers') }}">Commercial Workers </a></li>
+                                <li><a href="{{ url('/trades') }}">Trades </a></li>
+                                <li><a href="{{ url('/natdisaster') }}">Nat Disaster</a></li>
+                                <li><a href="{{ url('/welderscommercial') }}">Welders Commercial </a></li>
+                                <li><a href="{{ url('/gallary') }}">Gallary</a></li>
+                                <li><a href="{{ url('/bleudonahue') }}">Bleu Donahue</a></li>
+                                <li><a href="{{ url('/newpage') }}">New Page </a></li>
                             </ul>
                         </li>
-                        <li class="submenu"><a href="{{ url('/ourmenu') }}">Our Memu </a></li>
-                        <li class="submenu"><a href="{{ url('/services') }}">Services</a></li>
-                        <li class="submenu"><a href="{{ url('/ourmission  ') }}">Our Mission</a></li>
-                        <li class="submenu"><a href="{{ url('/partners') }}">3 Partners </a></li>
+                        <li><a href="{{ url('/ourmenu') }}">Our Memu </a></li>
+                        <li><a href="{{ url('/service') }}">Services</a></li>
+                        <li><a href="{{ url('/ourmission') }}">Our Mission</a></li>
+                        <li><a href="{{ url('/partners') }}">3 Partners </a></li>
                         <li>
                             @if (Route::has('login'))
 
@@ -117,15 +112,44 @@
                     <!-- ***** Menu End ***** -->
                 </nav>
             </div>
-        </div>
+        </div>  
 
 
-    </header><br>
+    </header><br><br>
 
     <div class="section" id="about">
-
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-xs-12">
+                    <div class="left-text-content">
+                        <div class="section-heading">
+                            <h2>Bleu Donahue</h2>
+                            <button class="btn btn-primary" ><a style="color: white;" href="{{ url('/home')}}">HOME</a></button>
+                            <hr>
+                            <p>Industrial Solar installation work, Supply Chain Logistics, Web Design, Delegation, Professional Labor union management, Managing Orders and inventory for Multi Billion Dollar Companies, Managing Quality Control for the food industry, head QC lead at multiple food quality control labs, Business management, consulting,
+                                 lead concept drafter at multiple companies, started multiple companies</p><br>
+                                    <h5>Supply the chain</h5><br>
+                                    <h6>Logistics</h6>
+                                    <h6>Quality control</h6>
+                                    <h6>Design</h6>
+                                    <h6>Eye for detail</h6>
+                                    <h6>Staffing</h6>
+                                    <h6>Solar</h6>
+                        </div><br><br><br>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-xs-12">
+                    <div class="left-text-content">
+                        <div class="section-heading">
+                        <div class="thumb">
+                            <img style="padding-left: 100px; padding-top:100px;" src="assets/images/Image by Science in HD (1).png" alt="">
+                        </div>
+                        </div><br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
     <footer>
         <div class="container">
             <div class="row">
@@ -142,6 +166,9 @@
                 <div class="col-lg-4">
                     <div class="logo">
                         <a href="index.html"><img style="width: 100px;" src="assets/images/logo/Attachment_1627657541.jpeg" alt=""></a>
+                    </div>
+                    <div class="logo">
+                        <a style="color:black" href="cajunstaffing.com">cajunstaffing 2021 llc</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-xs-12">

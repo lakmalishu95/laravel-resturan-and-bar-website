@@ -163,7 +163,7 @@
                                 </div>
                                 <div class="col-lg-6 col-sm-12">
                                     <fieldset>
-                                        <input lname="fname" type="text" id="fname" placeholder="first Name :" required="">
+                                        <input name="fname" type="text" id="fname" placeholder="first Name :" required="">
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-6 col-sm-12">
@@ -186,7 +186,7 @@
 
                                 <div class="col-lg-12 col-sm-12">
                                     <fieldset>
-                                        <input name="fiald" type="text" id="fiald" placeholder="Are you over 21 ?" required="">
+                                        <input name="O21" type="text" id="O21" placeholder="Are you over 21 ?" required="">
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-12">
@@ -196,9 +196,18 @@
                                 </div>
                                 <div class="col-lg-12 col-sm-12">
                                     <fieldset>
-                                        <input name="fiald" rows="6" type="text" class="form-control" id="validationDefault01" value="Mark"  placeholder="Can you provide one or more referances? That we can contact" placeholder="Can you provide one or more referances? That we can contact" required>
+                                        <input name="fiald" rows="6" type="text" class="form-control" id="validationDefault01"   placeholder="ID " required ="">
                                     </fieldset>
                                 </div>
+                                <div class="col-lg-12 col-sm-12">
+                                    <fieldset>
+                                        <input name="O21" type="text" id="O21" placeholder=" Can you provide one or more referances? That we can contact" required="">
+                                    </fieldset>
+                                </div>
+                                
+
+                               
+
 
 
                                 <br><br>
