@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -21,6 +22,7 @@
 
     <link rel="stylesheet" href="assets/css/lightbox.css">
 </head>
+
 <body>
 
     <!-- ***** Preloader End ***** -->
@@ -33,26 +35,30 @@
         <div class="container-fluid">
 
             <div class="col-12">
-                <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
-                        <a href="home" class="logo">
-                            <img src="assets/images/logo-new.jpg" class="mx-auto d-block" style="width: 150px;  padding-top: 20px; padding-left: 20px;">
-                        </a>
 
-                        
+
+
+                <nav class="main-nav">
+
+                    <!-- ***** Logo Start ***** -->
+
+                    <a href="home" class="logo">
+                        <img src="assets/images/logo-new.jpg" class="mx-auto d-block" style="width: 150px;  padding-top: 20px; padding-left: 20px;">
+                    </a>    
+
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li class="scroll-to-section"><a href="{{ url('/home')}}" class="active">Home</a></li>
+                        <li class="scroll-to-section"><a href="{{ url('/home')}}" >Home</a></li>
                         <li class="submenu">
                             <a href="{{url('/employers')}}">EMPLOYERS</a>
                             <ul>
-                                <li><a href="{{ url('/employecontact') }}">BAR</a></li>
-                                <li><a href="{{ url('/employecontact') }}">RESTARAUNTS</a></li>
+                                <li><a href="{{ url('/bar') }}">BAR</a></li>
+                                <li><a href="{{ url('/restaraunts') }}">RESTARAUNTS</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
-                            <a href="{{ url('/employecontact') }}">contact </a>
+                            <a href="#">contact </a>
                             <ul>
                                 <li><a href="{{ url('/employecontact') }}">Employee contact</a></li>
                                 <li><a href="{{ url('/businesscontact') }}">Business contact</a></li>
@@ -61,36 +67,32 @@
                         <li class="submenu">
                             <a href="{{ url('/businessmanagement') }}">Business Management </a>
                             <ul>
-                                <li><a href="{{ url('/employecontact') }}">Business Starter Packages</a></li>
-                                <li><a href="{{ url('/employecontact') }}">Consultation</a></li>
-                                <li><a href="{{ url('/employecontact') }}">Merchandise</a></li>
-                                <li><a href="{{ url('/employecontact') }}">Contracts</a></li>
-                                <li><a href="{{ url('/employecontact') }}">Custom Request</a></li>
-                           
+                                <li><a href="{{ url('/business-starter-packages') }}">Business Starter Packages</a></li>
+                                <li><a href="{{ url('/consultation') }}">Consultation</a></li>
+                                <li><a href="{{ url('/merchandise') }}">Merchandise</a></li>
+                                <li><a href="{{ url('/contracts') }}">Contracts</a></li>
+                                <li><a href="{{ url('/customerequest') }}">Custom Request</a></li>
+
                             </ul>
                         </li>
                         <li class="submenu">
                             <a href="{{ url('/employees')}}">EMPLOYEES </a>
                             <ul>
-                                <li><a href="{{ url('/employecontact') }}">bartenders</a></li>
-                                <li><a href="{{ url('/employecontact') }}">waiters</a></li>
-                                <li><a href="{{ url('/employecontact') }}">Waitresses </a></li>
-                                <li><a href="{{ url('/employecontact') }}">Food Industry</a></li>
-                                <li><a href="{{ url('/employecontact') }}">OIL an GAS </a></li>
-                                <li><a href="{{ url('/employecontact') }}">Nat Disaster</a></li>
-                                <li><a href="{{ url('/employecontact') }}">New Page</a></li>
-                                <li><a href="{{ url('/employecontact') }}">New Page </a></li>
-                                <li><a href="{{ url('/employecontact') }}">New Page</a></li>
-                                <li><a href="{{ url('/employecontact') }}">New Page </a></li>
-                                <li><a href="{{ url('/employecontact') }}">New Page</a></li>
-                                <li><a href="{{ url('/employecontact') }}">New Page </a></li>
-                                
+                                <li><a href="{{ url('/foodindustry') }}">Food Industry</a></li>
+                                <li><a href="{{ url('/residentialworkers') }}">Residential Workers</a></li>
+                                <li><a href="{{ url('/commercialworkers') }}">Commercial Workers </a></li>
+                                <li><a href="{{ url('/trades') }}">Trades </a></li>
+                                <li><a href="{{ url('/natdisaster') }}">Nat Disaster</a></li>
+                                <li><a href="{{ url('/welderscommercial') }}">Welders Commercial </a></li>
+                                <li><a href="{{ url('/gallary') }}">Gallary</a></li>
+                                <li><a href="{{ url('/bleudonahue') }}">Bleu Donahue</a></li>
+                                <li><a href="{{ url('/newpage') }}">New Page </a></li>
                             </ul>
                         </li>
-                        <li class="submenu"><a href="{{ url('/ourmenu') }}">Our Memu </a></li>
-                        <li class="submenu"><a href="{{ url('/services') }}">Services</a></li>
-                        <li class="submenu"><a href="{{ url('/ourmission  ') }}">Our Mission</a></li>
-                        <li class="submenu"><a href="{{ url('/partners') }}">3 Partners </a></li>
+                        <li><a href="{{ url('/ourmenu') }}">Our Memu </a></li>
+                        <li><a href="{{ url('/service') }}">Services</a></li>
+                        <li><a href="{{ url('/ourmission') }}">Our Mission</a></li>
+                        <li><a href="{{ url('/partners') }}">3 Partners </a></li>
                         <li>
                             @if (Route::has('login'))
 
@@ -116,12 +118,10 @@
                 </nav>
             </div>
         </div>
-        
-        
     </header><br>
 
     <!-- ***** Reservation Us Area Starts ***** -->
-<div class="section" id="reservation">
+    <div class="section" id="reservation">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 align-self-center">
@@ -151,8 +151,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="contact-form">
-                        <form id="contact" action="{{url('/businesscontact',$data->id)}}" method="post" enctype="multipart/form-data">
-
+                        <form id="contact"  method="post" enctype="multipart/form-data">
                             @csrf
 
                             <div class="row">
@@ -161,39 +160,39 @@
                                 </div>
                                 <div class="col-lg-6 col-sm-12">
                                     <fieldset>
-                                        <input name="fname" type="text" id="fname" placeholder="first Name :" value="{{$data->fname}}" required="">
+                                        <input name="fname" type="text" id="fname" placeholder="first Name :" required="">
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-6 col-sm-12">
                                     <fieldset>
-                                        <input name="lname" type="text" id="lname" placeholder="last Name :" value="{{$data->lname}}" required="">
+                                        <input name="lname" type="text" id="lname" placeholder="last Name :" required="">
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-12 col-sm-12">
                                     <fieldset>
-                                        <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Enter Your Email :" value="{{$data->bname}}" required="">
+                                        <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Enter Your Email :" required="">
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-12 col-sm-12">
                                     <fieldset>
-                                        <input name="bname" type="text" id="bname" placeholder="Enter Business name :" value="{{$data->category}}" required="">
+                                        <input name="bname" type="text" id="bname" placeholder="Enter Business name :" required="">
                                     </fieldset>
                                 </div>
                                 <div class="col-md-12 col-sm-12">
-                                    <input type="text" name="guest" placeholder="Enter Business Category :" value="{{$data->eorc}}">
-                                    
+                                    <input type="text" name="category" placeholder="Enter Business Category :">
+
                                 </div>
-                                
+
                                 <div class="col-lg-12 col-sm-12">
-                                
-                                        <input name="evebt" type="text" id="event" placeholder="Event or business :" value="{{$data->helpful}}" required="">
-                    
+
+                                    <input name="eorc" type="text" id="eorc" placeholder="Event or business :" required="">
+
                                 </div>
-                                
-                                
+
+
                                 <div class="col-lg-12">
                                     <fieldset>
-                                        <textarea name="message" rows="6" id="message" placeholder="How can we be helpful today" required=""></textarea>
+                                        <textarea name="helpful" rows="6" id="helpful" placeholder="How can we be helpful today" required=""></textarea>
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-12">
@@ -207,8 +206,8 @@
                 </div>
             </div>
         </div>
-</div>
-<footer>
+    </div>
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-xs-12">
@@ -230,7 +229,7 @@
                     <div class="left-text-content">
                         <p>designed by
 
-                            <br><a href="https://www.fiverr.com/kevinkrish95?public_mode=true" >kevinkrish</a>
+                            <br><a href="https://www.fiverr.com/kevinkrish95?public_mode=true">kevinkrish</a>
                     </div>
                 </div>
             </div>
@@ -240,4 +239,5 @@
 
 
 </body>
+
 </html>

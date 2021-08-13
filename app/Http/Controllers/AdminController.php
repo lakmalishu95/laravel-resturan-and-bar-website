@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Food;
 
+use App\Models\Businesscontact;
+
+
 class AdminController extends Controller
 {
 
@@ -106,10 +109,44 @@ class AdminController extends Controller
         return view("admin.employersdash");
     }
 
-    public function bcdash()
-    {
+// business contact controllers
 
-        return view("admin.bsdash");
+    public function businesscontact(Request $request)
+    {
+        $data = new businesscontact;
+
+
+        $data->fname = $request->fname;
+
+        $data->lname = $request->lname;
+
+        $data->email = $request->email;
+        
+        $data->bname = $request->bname;
+
+        $data->category = $request->category;
+
+        $data->eorc = $request->eorc;
+
+        $data->helpful = $request->helpful;
+
+
+        $data->save();
+
+        return redirect()->back();
+    }
+
+    public function bcdash(Request $request)
+    {
+        $data = businesscontact::all();
+        return view("admin.bcdash", compact("data"));
+    }
+
+    public function deletebc($id)
+    {
+        $data = businesscontact::find($id);
+        $data->delete();
+        return redirect()->back();
     }
 
    

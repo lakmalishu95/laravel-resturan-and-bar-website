@@ -59,9 +59,9 @@
                                 <td> {{$data ->category}}</td>
                                 <td> {{$data ->eorc}}</td>
                                 <td> {{$data ->helpful}}</td>
-                                <td>
-                                  <div class="badge badge-outline-success">Approved</div>
-                                </td>
+                                <td><a href="{{url('/deletebc',$data->id)}}">
+                                      <div class="badge badge-outline-success">Delete</div></a>
+                                    </td>
                               </tr>
                             @endforeach 
                            

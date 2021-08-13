@@ -134,6 +134,7 @@ Route::get("/users",[AdminController::class,"user"]);
 Route::get("/deleteuser/{id}",[AdminController::class,"deleteuser"]);
 
 
+
 Route::get("/foodmenu",[AdminController::class,"foodmenu"]);
 Route::get("/deletemenu/{id}",[AdminController::class,"deletemenu"]);
 
@@ -157,8 +158,13 @@ Route::get("/employersdash",[AdminController::class,"employersdash"]);
 
 
 //business contact////
-
+Route::post("/businesscontact",[AdminController::class,"businesscontact"]);
 Route::get("/bcdash",[AdminController::class,"bcdash"]);
+Route::get("/deletebc/{id}",[AdminController::class,"deletebc"]);
+
+
+
+
 
 
 //home controllers
