@@ -124,6 +124,7 @@
                     </div>
                 </div>
             </div>
+            <button class="btn btn-primary"><a style="color: white;" href="{{ url('/employerreg')}}">Register here</a></button><br><br>
             <div class="row">
                 <div class="col-lg-4">
                     <div class="chef-item">

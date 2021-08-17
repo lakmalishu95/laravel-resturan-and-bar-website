@@ -167,6 +167,11 @@ Route::get("/employersdash",[AdminController::class,"employersdash"]);
 
 
 
+
+
+
+
+
 //business contact////
 Route::post("/businesscontact",[AdminController::class,"businesscontact"]);
 Route::get("/bcdash",[AdminController::class,"bcdash"]);
@@ -179,6 +184,11 @@ Route::get("/deletebc/{id}",[AdminController::class,"deletebc"]);
 
 Route::get("/employeereg",[AdminController::class,"employeereg"]);
 
+
+
+///employeres registation
+
+Route::get("/employerreg",[AdminController::class,"employerreg"]);
 
 
 

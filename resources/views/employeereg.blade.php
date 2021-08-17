@@ -170,7 +170,27 @@
                                 </div>
                                 <div class="col-lg-6 col-sm-12">
                                     <fieldset>
+                                        <input name="licen" type="text" id="licen" placeholder="Licenses :" required="">
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <fieldset>
                                         <input name="phone" type="number" id="lname" placeholder="Phone Number :" required="">
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12 col-sm-12">
+                                    <fieldset>
+                                        <input name="location" type="text" id="bname" placeholder="Location :" required="">
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12 col-sm-12">
+                                    <fieldset>
+                                        <input name="ex" type="text" id="ex" placeholder="Experience :" required="">
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12 col-sm-12">
+                                    <fieldset>
+                                        <input name="ex" type="text" id="ex" placeholder="$ Amount for hour :" required="">
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-12 col-sm-12">
@@ -179,7 +199,9 @@
                                     </fieldset>
                                 </div>
                                 <div class="col-md-12 col-sm-12">
-                                   <span> Photo :</span><input type="file" name="category" placeholder="Career Field/Job Field  :">
+                                <label for="img">Select image:</label>
+                                <input type="file" id="img" name="img" accept="image/*">
+  
 
                                 </div>
 
@@ -187,10 +209,14 @@
                                     <input type="text" name="category" placeholder="Career Field/Job Field  :">
 
                                 </div>
+                                <div class="col-md-12 col-sm-12">
+                                    <input type="text" name="category" placeholder="Industrial/Commercial/Residential ?  :">
+
+                                </div>
 
                                 <div class="col-lg-12 col-sm-12">
 
-                                    <input name="eorc" type="text" id="eorc" placeholder="Event or business :" required="">
+                                    <input name="eorc" type="text" id="eorc" placeholder="Are you over 21 ? " required="">
 
                                 </div>
                                 <div class="col-lg-12">
@@ -221,6 +247,9 @@
                 <div class="col-lg-4">
                     <div class="logo">
                         <a href="index.html"><img style="width: 100px;" src="assets/images/logo/Attachment_1627657541.jpeg" alt=""></a>
+                    </div>
+                    <div class="logo">
+                        <a style="color:black" href="cajunstaffing.com">cajunstaffing 2021 llc</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-xs-12">

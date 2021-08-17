@@ -154,6 +154,11 @@ class AdminController extends Controller
     {
         return view('employeereg');
     }
+
+    public function employerreg()
+    {
+        return view('employerreg');
+    }
     
    
 }
