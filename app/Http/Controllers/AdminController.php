@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 
 use App\Models\User;
 use App\Models\Food;
-
 use App\Models\Businesscontact;
 
 
@@ -149,5 +148,12 @@ class AdminController extends Controller
         return redirect()->back();
     }
 
+
+
+    public function employeereg()
+    {
+        return view('employeereg');
+    }
+    
    
 }

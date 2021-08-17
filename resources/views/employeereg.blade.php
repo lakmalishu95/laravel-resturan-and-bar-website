@@ -32,11 +32,7 @@
 
     <header class="header-area header-sticky">
         <div class="container-fluid">
-
             <div class="col-12">
-
-
-
                 <nav class="main-nav">
 
                     <!-- ***** Logo Start ***** -->
@@ -48,7 +44,7 @@
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li class="scroll-to-section"><a href="{{ url('/home')}}" class="active">Home</a></li>
+                        <li class="scroll-to-section"><a href="{{ url('/home')}}" >Home</a></li>
                         <li class="submenu">
                             <a href="{{url('/employers')}}">EMPLOYERS</a>
                             <ul>
@@ -116,33 +112,99 @@
                     <!-- ***** Menu End ***** -->
                 </nav>
             </div>
-        </div>  
-    </header><br><br>
+        </div>
+    </header><br>
 
-    <div class="section" id="about">
+    <!-- ***** Reservation Us Area Starts ***** -->
+    <div class="section" id="reservation">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-12 col-xs-12">
+                <div class="col-lg-4 align-self-center">
                     <div class="left-text-content">
                         <div class="section-heading">
-                            <h2>EMPLOYEE REGISTER</h2>
-                            <button class="btn btn-primary" ><a style="color: white;" href="{{ url('/employeereg')}}">click here</a></button>
-                            <hr>
-                        </div>
+                            <h6>Here Employees can Register and Join with us.</h6>
                             
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum cum facilis quia cupiditate dolorem praesentium illo accusantium eius voluptatum ea totam vero ipsa, voluptatem nesciunt, nemo quae non odit a!</p>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="phone">
+                                    <i class="fa fa-phone"></i>
+                                    <h4>Phone Numbers</h4>
+                                    <span>><a href="#">080-090-0880</a></span>
+                                </div><br><br>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="message">
+                                    <i class="fa fa-envelope"></i>
+                                    <h4>Emails</h4>
+                                    <span><a href="#">cajunstaffingfood@gmail.com</a></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 col-xs-12">
-                    <div class="left-text-content">
-                        <div class="section-heading">
-                        
-                        </div><br><br><br>
+                <div class="col-lg-8">
+                    <div class="contact-form">
+                        <form style="background-color: none;" id="contact"  method="post" enctype="multipart/form-data">
+                            @csrf
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h4>EMPLOYEE  &nbsp;REGISTATION</h4>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <fieldset>
+                                        <input name="fname" type="text" id="fname" placeholder="First Name :" required="">
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <fieldset>
+                                        <input name="lname" type="text" id="lname" placeholder="Last Name :" required="">
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12 col-sm-12">
+                                    <fieldset>
+                                        <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Enter Your Email :" required="">
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <fieldset>
+                                        <input name="phone" type="number" id="lname" placeholder="Phone Number :" required="">
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12 col-sm-12">
+                                    <fieldset>
+                                        <input name="bname" type="text" id="bname" placeholder="Enter Business name :" required="">
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-12 col-sm-12">
+                                   <span> Photo :</span><input type="file" name="category" placeholder="Career Field/Job Field  :">
+
+                                </div>
+
+                                <div class="col-md-12 col-sm-12">
+                                    <input type="text" name="category" placeholder="Career Field/Job Field  :">
+
+                                </div>
+
+                                <div class="col-lg-12 col-sm-12">
+
+                                    <input name="eorc" type="text" id="eorc" placeholder="Event or business :" required="">
+
+                                </div>
+                                <div class="col-lg-12">
+                                    <fieldset>
+                                        <button type="submit" id="form-submit" class="main-button-icon">Send</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <footer>
         <div class="container">
             <div class="row">
@@ -160,9 +222,6 @@
                     <div class="logo">
                         <a href="index.html"><img style="width: 100px;" src="assets/images/logo/Attachment_1627657541.jpeg" alt=""></a>
                     </div>
-                    <div class="logo">
-                        <a style="color:black" href="cajunstaffing.com">cajunstaffing 2021 llc</a>
-                    </div>
                 </div>
                 <div class="col-lg-4 col-xs-12">
                     <div class="left-text-content">
@@ -174,6 +233,7 @@
             </div>
         </div>
     </footer>
+    <!-- ***** Reservation Area Ends ***** -->
 
 
 </body>

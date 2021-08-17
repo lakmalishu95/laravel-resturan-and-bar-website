@@ -71,6 +71,9 @@ Route::get('/restaraunts', function () {
 });
 
 
+
+
+
 // business management sub pages
 
 Route::get('/business-starter-packages', function () {
@@ -88,6 +91,8 @@ Route::get('/merchandise', function () {
 Route::get('/customerequest', function () {
     return view('subpages.bm.customrequest');
 });
+
+
 
 
 // employees subpages
@@ -148,13 +153,18 @@ Route::post("/update/{id}",[AdminController::class,"update"]);
 
 Route::post("/uploadfood",[AdminController::class,"upload"]);
 
-//employee///////
 
+
+
+
+//employee///////
 Route::get("/employedash",[AdminController::class,"employedash"]);
 
-//employers /////////
 
+
+//employers /////////
 Route::get("/employersdash",[AdminController::class,"employersdash"]);
+
 
 
 //business contact////
@@ -163,6 +173,11 @@ Route::get("/bcdash",[AdminController::class,"bcdash"]);
 Route::get("/deletebc/{id}",[AdminController::class,"deletebc"]);
 
 
+
+
+///employee registation
+
+Route::get("/employeereg",[AdminController::class,"employeereg"]);
 
 
 

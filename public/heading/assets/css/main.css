@@ -78,7 +78,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #f7f7f7 url("images/bg01.png");
+		background: #f8f8f8 url("images/bg01.png");
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -379,145 +379,11 @@ input, select, textarea {
 			margin-top: -1px;
 		}
 
-/* Banner */
 
-	#banner {
-		background-image: url("../../images/banner.jpg");
-		background-position: center center;
-		background-size: cover;
-		height: 28em;
-		text-align: center;
-		position: relative;
-	}
 
-		#banner header {
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			width: 100%;
-			background: #212121;
-			background: rgba(27, 27, 27, 0.75);
-			color: #fff;
-			padding: 1.5em 0;
-		}
 
-			#banner header h2 {
-				display: inline-block;
-				margin: 0;
-				font-size: 1.25em;
-				vertical-align: middle;
-			}
 
-				#banner header h2 em {
-					opacity: 0.75;
-				}
-
-				#banner header h2 a {
-					border-bottom-color: rgba(255, 255, 255, 0.5);
-				}
-
-					#banner header h2 a:hover {
-						border-bottom-color: transparent;
-					}
-
-			#banner header .button {
-				vertical-align: middle;
-				margin-left: 1em;
-			}
-
-/* Wrapper */
-
-	.wrapper {
-		padding: 5em 0 3em 0;
-	}
-
-		.wrapper.style1 {
-			background: #fff;
-		}
-
-		.wrapper.style2 {
-			background-color: #fff;
-			background-image: url("images/bg02.png"), url("images/bg03.png"), url("images/bg01.png");
-			background-position: top left,						bottom left,					top left;
-			background-size: 100% 6em,						100% 6em,						auto;
-			background-repeat: no-repeat,						no-repeat,						repeat;
-		}
-
-		.wrapper.style3 {
-			background-color: #37c0fb;
-			background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
-			background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
-			background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
-			background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
-			color: #fff;
-		}
-
-			.wrapper.style3 .button {
-				background: #fff;
-				color: #474747;
-			}
-
-				.wrapper.style3 .button:hover {
-					color: #37c0fb !important;
-				}
-
-/* CTA */
-
-	#cta {
-		text-align: center;
-		padding: 3.5em 0;
-	}
-
-		#cta header h2 {
-			display: inline-block;
-			vertical-align: middle;
-			margin: 0;
-		}
-
-		#cta header .button {
-			vertical-align: middle;
-			margin-left: 1em;
-		}
-
-/* Footer */
-
-	#footer {
-		padding: 4em 0 8em 0;
-	}
-
-		#footer a {
-			color: inherit;
-			border-bottom-color: rgba(71, 71, 71, 0.25);
-		}
-
-			#footer a:hover {
-				color: #37c0fb;
-				border-bottom-color: transparent;
-			}
-
-		#footer .container {
-			margin-bottom: 4em;
-		}
-
-		#footer .icons {
-			text-align: center;
-			margin: 0;
-		}
-
-			#footer .icons a {
-				color: #999;
-			}
-
-				#footer .icons a:hover {
-					color: #474747;
-				}
-
-		#footer .copyright {
-			color: #999;
-			margin-top: 1.5em;
-			text-align: center;
-			font-size: 0.9em;
-		}
+	
 
 /* Wide */
 
@@ -575,33 +441,16 @@ input, select, textarea {
 					padding: 0 0 1.75em 0;
 				}
 
-		/* Banner */
+	
 
-			#banner {
-				height: 20em;
-			}
-
+		
 		/* Wrapper */
 
 			.wrapper {
 				padding: 3em 0 1em 0;
 			}
 
-		/* CTA */
 
-			#cta {
-				padding: 2em 0;
-			}
-
-		/* Footer */
-
-			#footer {
-				padding: 3em 0 3em 0;
-			}
-
-				#footer .container {
-					margin-bottom: 1em;
-				}
 
 	}
 
@@ -687,35 +536,6 @@ input, select, textarea {
 				display: none;
 			}
 
-		/* Banner */
-
-			#banner {
-				height: 20em;
-			}
-
-				#banner header h2 {
-					display: block;
-				}
-
-				#banner header .button {
-					margin: 1em 0 0 0;
-				}
-
-		/* CTA */
-
-			#cta {
-				padding: 1.5em 0;
-			}
-
-				#cta header h2 {
-					display: block;
-				}
-
-				#cta header .button {
-					margin: 1em 0 0 0;
-				}
-
-		/* Footer */
 
 			
 		/* Nav */
@@ -960,11 +780,7 @@ input, select, textarea {
 				line-height: 2em;
 			}
 
-		/* Banner */
-
-			#banner {
-				height: 18em;
-			}
+		
 
 		/* Wrapper */
 
@@ -1018,31 +834,12 @@ input, select, textarea {
 
 		/* Banner */
 
-			#banner {
-				height: 20em;
-			}
-
-				#banner header {
-					padding: 20px;
-				}
-
 		/* Wrapper */
 
 			.wrapper {
 				padding: 2em 20px 1px 20px;
 			}
 
-		/* CTA */
-
-			#cta {
-				padding: 20px;
-			}
-
-		/* Footer */
-
-			#footer {
-				padding: 2em 20px;
-				text-align: left;
-			}
-
+		
+	
 	}
