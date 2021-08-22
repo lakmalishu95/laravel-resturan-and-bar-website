@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Food;
 use App\Models\Businesscontact;
+use App\Models\employee;
+
 
 
 class AdminController extends Controller
@@ -155,10 +157,52 @@ class AdminController extends Controller
         return view('employeereg');
     }
 
+
+    public function employeeregdash(Request $request)
+    {
+        $data = new employee;
+
+
+        $data->fname = $request->fname;
+
+        $data->lname = $request->lname;
+
+        $data->email = $request->email;
+        
+        $data->emp_j = $request->emp_j;
+
+        $data->emp_a = $request->emp_a;
+
+        $data->emp_licen = $request->emp_licen;
+
+        $data->emp_age = $request->emp_age;
+
+        $data->emp_d1 = $request->emp_d1;
+
+        $data->emp_location = $request->emp_location;
+
+        $data->emp_referances = $request->emp_referances;
+
+        $data->save();
+
+        return redirect()->back();
+
+    }
+    public function employedashview()
+    {
+        $data = employee::all();
+        return view("admin.employedash", compact("data"));
+    }
+
+
+    
+
     public function employerreg()
     {
         return view('employerreg');
     }
+    
+
     
    
 }

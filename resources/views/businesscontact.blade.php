@@ -130,7 +130,9 @@
                             <h6>Contact Us</h6>
                             <h2> Business Contact </h2>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum cum facilis quia cupiditate dolorem praesentium illo accusantium eius voluptatum ea totam vero ipsa, voluptatem nesciunt, nemo quae non odit a!</p>
+                        <p>For one time events or other inquiries please message  cajunstaffing@yahoo.com</p>
+                        <p>We are headquartered in the great state of Louisiana, but we live to serve the world</p>
+                        <p>For international staffing help and inquiries please email cajunstaffing.world@gmail.com </p>
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="phone">

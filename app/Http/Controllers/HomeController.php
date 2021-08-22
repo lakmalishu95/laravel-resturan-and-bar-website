@@ -28,9 +28,12 @@ class HomeController extends Controller
     {
         $data = food::all();
         $usertype = Auth::user()->usertype;
-        if($usertype=='1')
+        if($usertype=='admin')
         {
             return view('admin.adminhome');
+        }
+        elseif($usertype=='employee'){
+            return view('bm',compact('data'));
         }
         else{
             return view('home',compact('data'));

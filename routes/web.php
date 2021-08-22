@@ -160,6 +160,11 @@ Route::post("/uploadfood",[AdminController::class,"upload"]);
 //employee///////
 Route::get("/employedash",[AdminController::class,"employedash"]);
 
+Route::post("/employeereg",[AdminController::class,"employeeregdash"]);
+
+Route::get("/employedash",[AdminController::class,"employedashview"]);
+
+
 
 
 //employers /////////

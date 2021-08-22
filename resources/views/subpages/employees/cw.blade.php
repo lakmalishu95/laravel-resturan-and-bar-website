@@ -129,13 +129,14 @@
                     <div class="left-text-content">
                         <div class="section-heading">
                             <h2>Commercial Workers </h2>
-                            <button class="btn btn-primary" ><a style="color: white;" href="{{ url('/home')}}">HOME</a></button>
+                            <button class="btn btn-primary" ><a style="color: white;" href="{{ url('/employecontact')}}">Contact us</a></button>
                             <hr>
                             <p>It is our greatest honor to honor your home building project with great employees and deliver a great experience
                                  for the company constructing the homes,
                                  and the homes residents. Our landscapers would love to make your yard a masterpiece compared to your neighbor</p>
-                                   
-                                    <h6>Trades</h6>
+                                    
+                                    
+                                    <div style="background-color: gray"><h5 >Trades</h5></div>                              
                                     <h6>Welders</h6>
                                     <h6>Pipefitters</h6>
                                     <h6>Drywall</h6>
@@ -144,8 +145,8 @@
                                     <h6>Residential Plumbers</h6>
                                     <h6>Commercial plumbers</h6>
                                     <h6>Laborers Unskilled </h6><br>
-                                    
-                                    <h6>Engineers</h6>
+
+                                    <div style="background-color: gray"><h5>Engineers</h5></div>
                                     <h6>Draftsman</h6>
                                     <h6>Pipefitter</h6>
                                     <h6>Ironworkers</h6>
@@ -172,7 +173,8 @@
                                     <h6>construction management</h6>
                                     <h6>landscape designer</h6><br>
 
-                                    <h6>Industrial </h6>
+
+                                    <div style="background-color: gray"><h5>Industrial </h5></div>
                                     <h6>Equipment Operators</h6>
                                     <h6>Plumbing </h6>
                                     <h6>Electricians </h6>

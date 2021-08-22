@@ -35,9 +35,6 @@
         <div class="container-fluid">
 
             <div class="col-12">
-
-
-
                 <nav class="main-nav">
 
                     <!-- ***** Logo Start ***** -->
@@ -128,7 +125,7 @@
                 <div class="col-lg-6 col-md-12 col-xs-12">
                     <div class="left-text-content">
                         <div class="section-heading">
-                            <h2>Residential</h2>
+                            <h2>Residential Workers</h2>
                             <button class="btn btn-primary">Search and Rescue</button>
                             <hr>
                             <p>It is our greatest honor to honor your home building project with great employees and deliver a great experience
