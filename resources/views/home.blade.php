@@ -201,7 +201,7 @@
                 <div class="col-lg-6 col-md-6 col-xs-12">
                     <div class="left-text-content">
                         <div class="section-heading">
-                            <h2>for job seekers</h2>
+                            <h2>For Job Seekers</h2><hr>
                         </div>
                         <h5>Create your account and see how our <br>technology makes the process <br>simple so the
                             focus is always<br> on you, the individual.
@@ -226,7 +226,7 @@
                             <h2>For Employers.</h2>
                         </div>
                         <h5>See how we harness the power of<br> technology to focus on your business<br> needs.</h5><br>
-                        <button type="button" class="btn btn-primary"> <a href="{{ url("/employecontact") }}">Learn more</a></button>
+                        <button type="button" class="btn btn-primary"> <a style="color:aliceblue" href="{{ url("/employecontact") }}">Learn more</a></button>
                         <div class="row">
                         </div>
                     </div>
@@ -260,7 +260,7 @@
                         </div>
                         <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae numquam hic amet molestias accusamus reiciendis minus recusandae consequuntur animi optio natus
                             consequatur debitis magnam, exercitationem dignissimos iure dolore, quidem quis?</h5><br>
-                        <button type="button" class="btn btn-primary"><a href="{{ url("/businesscontact") }}">Learn more</a></button><br><br>
+                        <button type="button" class="btn btn-primary"><a style="color: white;" href="{{ url("/businesscontact") }}">Learn more</a></button><br><br>
                         <div class="row">
                         </div>
                     </div>

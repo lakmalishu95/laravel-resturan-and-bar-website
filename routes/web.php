@@ -35,9 +35,6 @@ Route::get('/businessmanagement', function () {
 Route::get('/employers', function () {
     return view('employers');
 });
-Route::get('/employees', function () {
-    return view('employees');
-});
 
 Route::get('/ourmission', function () {
     return view('ourmission');
@@ -51,52 +48,32 @@ Route::get('/service', function () {
     return view('service');
 });
 
-
 Route::get('/partners', function () {
     return view('partners');
 });
-
-
-//subpages
  
+//dash board
 
-//employers sub pages
-
-Route::get('/bar', function () {
-    return view("subpages.employers.bar");
-});
-
-Route::get('/restaraunts', function () {
-    return view('subpages.employers.restaraunts');
-});
+//users
+Route::get("/users",[AdminController::class,"user"]);
+Route::get("/deleteuser/{id}",[AdminController::class,"deleteuser"]);
 
 
+//food menu
+Route::get("/foodmenu",[AdminController::class,"foodmenu"]);
+Route::get("/deletemenu/{id}",[AdminController::class,"deletemenu"]);
+Route::get("/updateview/{id}",[AdminController::class,"updateview"]);
+Route::post("/update/{id}",[AdminController::class,"update"]);
+Route::post("/uploadfood",[AdminController::class,"upload"]);
 
 
+//employee///////
+Route::get("/employedash",[AdminController::class,"employedash"]);
+Route::post("/employeereg",[AdminController::class,"employeeregdash"]);
+Route::get("/employeereg",[AdminController::class,"employeereg"]);
+Route::get("/employedash",[AdminController::class,"employedashview"]);
 
-// business management sub pages
-
-Route::get('/business-starter-packages', function () {
-    return view('subpages.bm.bsp');
-});
-Route::get('/consultation', function () {
-    return view('subpages.bm.consultation');
-});
-Route::get('/contracts', function () {
-    return view('subpages.bm.contracts');
-});
-Route::get('/merchandise', function () {
-    return view('subpages.bm.merchandise');
-});
-Route::get('/customerequest', function () {
-    return view('subpages.bm.customrequest');
-});
-
-
-
-
-// employees subpages
-
+// employee subpages
 Route::get('/foodindustry', function () {
     return view('subpages.employees.foodindustry');
 });
@@ -121,60 +98,24 @@ Route::get('/gallary', function () {
 Route::get('/bleudonahue', function () {
     return view('subpages.employees.bd');
 });
-
 Route::get('/newpage', function () {
     return view('subpages.employees.newpage');
 });
-
-
-
-
-
-
-
-//dash board
-
-
-Route::get("/users",[AdminController::class,"user"]);
-Route::get("/deleteuser/{id}",[AdminController::class,"deleteuser"]);
-
-
-
-Route::get("/foodmenu",[AdminController::class,"foodmenu"]);
-Route::get("/deletemenu/{id}",[AdminController::class,"deletemenu"]);
-
-
-Route::get("/updateview/{id}",[AdminController::class,"updateview"]);
-
-
-
-Route::post("/update/{id}",[AdminController::class,"update"]);
-
-
-Route::post("/uploadfood",[AdminController::class,"upload"]);
-
-
-
-
-
-//employee///////
-Route::get("/employedash",[AdminController::class,"employedash"]);
-
-Route::post("/employeereg",[AdminController::class,"employeeregdash"]);
-
-Route::get("/employedash",[AdminController::class,"employedashview"]);
-
+Route::get("/emplyee",[AdminController::class,"user"]);
 
 
 
 //employers /////////
 Route::get("/employersdash",[AdminController::class,"employersdash"]);
+Route::get("/employerreg",[AdminController::class,"employerreg"]);
 
-
-
-
-
-
+//employers sub pages
+Route::get('/bar', function () {
+    return view("subpages.employers.bar");
+});
+Route::get('/restaraunts', function () {
+    return view('subpages.employers.restaraunts');
+});
 
 
 //business contact////
@@ -182,18 +123,22 @@ Route::post("/businesscontact",[AdminController::class,"businesscontact"]);
 Route::get("/bcdash",[AdminController::class,"bcdash"]);
 Route::get("/deletebc/{id}",[AdminController::class,"deletebc"]);
 
-
-
-
-///employee registation
-
-Route::get("/employeereg",[AdminController::class,"employeereg"]);
-
-
-
-///employeres registation
-
-Route::get("/employerreg",[AdminController::class,"employerreg"]);
+// business management sub pages
+Route::get('/business-starter-packages', function () {
+    return view('subpages.bm.bsp');
+});
+Route::get('/consultation', function () {
+    return view('subpages.bm.consultation');
+});
+Route::get('/contracts', function () {
+    return view('subpages.bm.contracts');
+});
+Route::get('/merchandise', function () {
+    return view('subpages.bm.merchandise');
+});
+Route::get('/customerequest', function () {
+    return view('subpages.bm.customrequest');
+});
 
 
 
@@ -202,6 +147,10 @@ Route::get("/",[HomeController::class,"index"]);
 Route::get("/home",[HomeController::class,"index"]);
 Route::get("/ourmenu",[HomeController::class,"ourmenu"]);
 Route::get("/redirects",[HomeController::class,"redirects"]);
+Route::get("/employees",[HomeController::class,"employeeview"]);
+Route::get("/employeeprofile/{id}",[HomeController::class,"employeeprofile"]);
+
+
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function (){
     return view('dashboard');

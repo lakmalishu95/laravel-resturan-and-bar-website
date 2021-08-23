@@ -119,29 +119,39 @@
         </div>  
     </header><br><br>
 
-    <div class="section" id="about">
+    <div class="section" id="chefs" >
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-12 col-xs-12">
-                    <div class="left-text-content">
-                        <div class="section-heading">
-                            <h2>EMPLOYEE REGISTER</h2>
-                            <button class="btn btn-primary" ><a style="color: white;" href="{{ url('/employeereg')}}">click here</a></button>
-                            <hr>
-                        </div>
-                            
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-xs-12">
-                    <div class="left-text-content">
-                        <div class="section-heading">
-                        
-                        </div><br><br><br>
+                <div class="col-lg-4 offset-lg-4 text-center">
+                    <div class="section-heading">
+                        <h6></h6>
+                        <h2>ALL EMPLOYEE</h2>
                     </div>
                 </div>
             </div>
+            
+            <button class="btn btn-primary"><a style="color: white;" href="{{ url('/employecontact')}}">Register here</a></button><br><br>
+            <div class="row" style="padding-bottom: 50px;">
+                @foreach($data as $data)                
+                <div class="col-lg-4">
+                    <div class="chef-item">
+                        <div class="thumb">
+                            <div class="overlay"></div>
+                            <ul class="social-icons">
+                            <button class="btn btn-primary"><a style="color: white;" href="{{ url('employeeprofile',$data->id)}}">View Profile</a></button>
+                            </ul>
+                            <img src="assets/images/chefs-01.jpg" alt="Chef #1">
+                        </div>
+                        <div class="down-content">
+                            <h4>{{$data->fname}} {{$data->lname}}</h4>
+                            <span>{{$data->email}}</span>
+                        </div>
+                    </div>
+                </div>
+                @endforeach           
+            </div>
         </div>
-    </div>
+    </div >
 
     <footer>
         <div class="container">

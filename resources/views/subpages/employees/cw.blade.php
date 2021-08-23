@@ -136,49 +136,49 @@
                                  and the homes residents. Our landscapers would love to make your yard a masterpiece compared to your neighbor</p>
                                     
                                     
-                                    <div style="background-color: gray"><h5 >Trades</h5></div>                              
-                                    <h6>Welders</h6>
-                                    <h6>Pipefitters</h6>
-                                    <h6>Drywall</h6>
-                                    <h6>Floorer</h6>
-                                    <h6>Carpenters</h6>
-                                    <h6>Residential Plumbers</h6>
-                                    <h6>Commercial plumbers</h6>
-                                    <h6>Laborers Unskilled </h6><br>
+                                    <div style="background-color: gray"><h5 >Trades</h5></div><br>                              
+                                    <h6><a href="#">Welders</a></h6>
+                                    <h6><a href="#">Pipefitters</a></h6>
+                                    <h6><a href="#">Drywall</a></h6>
+                                    <h6><a href="#">Floorer</a></h6>
+                                    <h6><a href="#">Carpenters</a></h6>
+                                    <h6><a href="#">Residential Plumber</a>s</h6>
+                                    <h6><a href="#">Commercial plumbers</a></h6>
+                                    <h6><a href="#">Laborers Unskilled </a></h6><br>
 
-                                    <div style="background-color: gray"><h5>Engineers</h5></div>
-                                    <h6>Draftsman</h6>
-                                    <h6>Pipefitter</h6>
-                                    <h6>Ironworkers</h6>
-                                    <h6>Carpenters</h6>
-                                    <h6>Pool/landscape architecture</h6>
-                                    <h6>Rod-Busters</h6>
-                                    <h6>Concrete placement</h6>
-                                    <h6>Concrete Finishers</h6>
-                                    <h6>Truck Drivers</h6>
-                                    <h6>Custodian</h6>
-                                    <h6>Refuse Collector</h6>
-                                    <h6>legal assistant</h6>
-                                    <h6>bus driver</h6>
-                                    <h6>brick mason</h6>
-                                    <h6>construction equipment operator</h6>
-                                    <h6>s -tractor trailer drivers -crane operator -carpenter</h6>
-                                    <h6>s -hvac tech</h6>
-                                    <h6>turbine(wind and pneumatic) technician</h6>
-                                    <h6>license practical nurse</h6>
-                                    <h6>diesel technician</h6>
-                                    <h6>home inspector</h6>
-                                    <h6>plumber</h6>
-                                    <h6>aircraft mechanic</h6>
-                                    <h6>construction management</h6>
-                                    <h6>landscape designer</h6><br>
+                                    <div style="background-color: gray"><h5>Engineers</h5></div><br>
+                                    <h6><a href="#">Draftsman</a></h6>
+                                    <h6><a href="#">Pipefitter</a></h6>
+                                    <h6><a href="#">Ironworkers</a></h6>
+                                    <h6><a href="#">Carpenters</a></h6>
+                                    <h6><a href="#">Pool/landscape architecture</a></h6>
+                                    <h6><a href="#">Rod-Busters</a></h6>
+                                    <h6><a href="#">Concrete placement</a></h6>
+                                    <h6><a href="#">Concrete Finishers</a></h6>
+                                    <h6><a href="#">Truck Drivers</a></h6>
+                                    <h6><a href="#">Custodian</a></h6>
+                                    <h6><a href="#">Refuse Collector</a></h6>
+                                    <h6><a href="#">legal assistant</a></h6>
+                                    <h6><a href="#">bus driver</a></h6>
+                                    <h6><a href="#">brick mason</a></h6>
+                                    <h6><a href="#">construction equipment operator</a></h6>
+                                    <h6><a href="#">s -tractor trailer drivers -crane operator -carpenter</a></h6>
+                                    <h6><a href="#">s -hvac tech</a></h6>
+                                    <h6><a href="#">turbine(wind and pneumatic) technician</a></h6>
+                                    <h6><a href="#">license practical nurse</a></h6>
+                                    <h6><a href="#">diesel technician</a></h6>
+                                    <h6><a href="#">home inspector</a></h6>
+                                    <h6><a href="#">plumber</a></h6>
+                                    <h6><a href="#">aircraft mechanic</a></h6>
+                                    <h6><a href="#">construction management</a></h6>
+                                    <h6><a href="#">landscape designer</a></h6><br>
 
 
-                                    <div style="background-color: gray"><h5>Industrial </h5></div>
-                                    <h6>Equipment Operators</h6>
-                                    <h6>Plumbing </h6>
-                                    <h6>Electricians </h6>
-                                    <h6>Oil and Gas</h6>
+                                    <div style="background-color: gray"><h5>Industrial </h5></div><br>
+                                    <h6><a href="#">Equipment Operators</a></h6>
+                                    <h6><a href="#">Plumbing</a> </h6>
+                                    <h6><a href="#">Electricians </a></h6>
+                                    <h6><a href="#">Oil and Gas</a></h6>
 
 
 

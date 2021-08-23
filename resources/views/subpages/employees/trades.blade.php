@@ -134,36 +134,36 @@
                             <p>We collect relevant and required licenses, and forms of ID to ensure that we bring you the best we possibly can. We pride ourselves very heavily on the work we do everyday.
                                  We try our best to ensure we provide staff that pride themselves just as much</p>
                                    
-                                    <h6>Concrete PLacement</h6>
-                                    <h6>General Labors</h6>
-                                    <h6>Residential Engineers</h6>
-                                    <h6>Pipefitters</h6>
-                                    <h6>Iron Workers</h6>
+                                    <h6><a href="#">Concrete PLac</a></h6>
+                                    <h6><a href="#">General Labors</a></h6>
+                                    <h6><a href="#">Residential Engineers</a></h6>
+                                    <h6><a href="#">Pipefitters</a></h6>
+                                    <h6><a href="#">Iron Workers</a></h6>
                              
                                     
-                                    <h6>Carpenters</h6>
-                                    <h6>Landscaping</h6>
-                                    <h6>Brick Mason</h6>
-                                    <h6>Dry wall</h6>
-                                    <h6>Heavy Equipment Operators</h6>
-                                    <h6>HVAC techs</h6>
-                                    <h6>Architects</h6>
-                                    <h6>Concrete finishers</h6>
-                                    <h6>Wind Turbine technicians</h6>
-                                    <h6>Rod-Busters</h6>
+                                    <h6><a href="#">Carpenters</a></h6>
+                                    <h6><a href="#">Landscaping</a></h6>
+                                    <h6><a href="#">Brick Mason</a></h6>
+                                    <h6><a href="#">Dry wall</a></h6>
+                                    <h6><a href="#">Heavy Equipment Operators</a></h6>
+                                    <h6><a href="#">HVAC techs</a></h6>
+                                    <h6><a href="#">Architects</a></h6>
+                                    <h6><a href="#">Concrete finishers</a></h6>
+                                    <h6><a href="#">Wind Turbine technicians</a></h6>
+                                    <h6><a href="#">Rod-Busters</a></h6>
                              
                                     
-                                    <h6>Truck Drivers</h6>
-                                    <h6>Crane Operators</h6>
-                                    <h6>Custodians</h6>
-                                    <h6>Licensed Pactical Licensed Nurses</h6>
-                                    <h6>Carpenters</h6>
-                                    <h6>Home Inspection</h6>
-                                    <h6>Construction Management</h6>
-                                    <h6>Mechanics</h6>
-                                    <h6>Landscape Artist</h6>
-                                    <h6>Residential Painters</h6>                                  
-                                    <h6>Commercial Painters</h6>
+                                    <h6><a href="#">Truck Drivers</a></h6>
+                                    <h6><a href="#">Crane Operators</a></h6>
+                                    <h6><a href="#">Custodians</a></h6>
+                                    <h6><a href="#">Licensed Pactical Licensed Nurses</a></h6>
+                                    <h6><a href="#">Carpenters</a></h6>
+                                    <h6><a href="#">Home Inspection</a></h6>
+                                    <h6><a href="#">Construction Management</a></h6>
+                                    <h6><a href="#">Mechanics</a></h6>
+                                    <h6><a href="#">Landscape Artist</a></h6>
+                                    <h6><a href="#">Residential Painters</a></h6>                                  
+                                    <h6><a href="#">Commercial Painters</a></h6>
 
 
                         </div><br><br><br>

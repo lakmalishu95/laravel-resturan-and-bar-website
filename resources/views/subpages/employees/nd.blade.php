@@ -139,9 +139,9 @@
                                 for all help or questions regarding our natural disaster assistance please email: staffing.cajun.disasters@gmail.com 
                                 Please allow us to best assist your community in these difficult trying times we would appreciate the quickest help with quality we could get in such a situation so we strive to do unto others as we
                                 </p>
-                                    <h6>Residential Construction and Services</h6>
-                                    <h6>Flood Repair Specialiss</h6>
-                                    <h6>Commercial Construction and Services</h6><br>
+                                    <h6 style="background-color: pink;"><a href="#">Residential Construction and Services</a></h6><br>
+                                    <h6  style="background-color: pink;"><a href="#">Flood Repair Specialiss</a></h6><br>
+                                    <h6  style="background-color: pink;"><a href="#">Commercial Construction and Services</a></h6><br><br>
                                 </div>
                                 <div class="col-lg-6 col-md-12 col-xs-12">
                                 <div class="thumb">
@@ -153,47 +153,47 @@
                                     
                                 <div class="row">
                                     <div class="col-lg-6 col-md-12 col-xs-12">
-                                        <h5>trades</h5><br>
+                                        <h5 style="background-color: gray;">trades</h5><br>
                                         <li>
-                                            <ol>Electricians (nat disaster)</ol>
-                                            <ol>Roofers (nat disastaer)</ol>
-                                            <ol>Flood Experienced laborer</ol>
-                                            <ol>Electricians Commercial</ol>
-                                            <ol>Painters (nat disaster)</ol>
-                                            <ol>Resdiential Construction</ol>
-                                            <ol>Scaffolders</ol>
-                                            <ol>Electrcians Residential</ol>
-                                            <ol>Commercial Construction</ol>
-                                            <ol>Plumbers(residential)</ol>
-                                            <ol>Resdiential Construction</ol>
-                                            <ol>Construction(commercial)</ol>
-                                            <ol>Equipment Operators (nat disaster)</ol>
-                                            <ol></ol>
+                                            <h6><a href="#">Electricians (nat disaster)</a></h6>
+                                            <h6><a href="#">Roofers (nat disastaer)</a></h6>
+                                            <h6><a href="#">Flood Experienced laborer</a></h6>
+                                            <h6><a href="#">Electricians Commercial</a></h6>
+                                            <h6><a href="#">Painters (nat disaster)</a></h6>
+                                            <h6><a href="#">Resdiential Construction</a></h6>
+                                            <h6><a href="#">Scaffolders</a></h6>
+                                            <h6><a href="#">Electrcians Residential</a></h6>
+                                            <h6><a href="#">Commercial Construction</a></h6>
+                                            <h6><a href="#">Plumbers(residential)</a></h6>
+                                            <h6><a href="#">Resdiential Construction</a></h6>
+                                            <h6><a href="#">Construction(commercial)</a></h6>
+                                            <h6><a href="#">Equipment Operators (nat disaster)</a></h6>
+                                          
 
                                         </li>
                                     </div>
                                     <div class="col-lg-6 col-md-12 col-xs-12">
-                                        <h5>Natural Disaster relief</h5><br>
+                                        <h5 style="background-color: gray;">Natural Disaster relief</h5><br>
                                         <li>
-                                            <ol>Relief Specialists</ol>
-                                            <ol> Dry Wall</ol>
-                                            <ol>Electricians</ol>
-                                            <ol>Equipment Operators The Trades</ol>
-                                            <ol>welders</ol>
-                                            <ol>painters</ol>
-                                            <ol>roofers</ol>
-                                            <ol>floorers</ol>
-                                            <ol>electricians Residential Construction</ol>
-                                            <ol>Industrial</ol>
-                                            <ol>Electricians</ol>
-                                            <ol>Plumbing</ol>
-                                            <ol>Equipment Operators</ol>
-                                            <ol>Scaffolders</ol>
-                                            <ol>Oil and Gas Commercial Constructions</ol>
-                                            <ol>Industrial</ol>
-                                            <ol> Equipment Operators</ol>
-                                            <ol>Dry Wall (nat distaster)</ol>
-                                            <ol>Welders (nat disaster)</ol>
+                                            <h6><a href="#">Relief Specialists</a></h6>
+                                            <h6><a href="#"> Dry Wall</a></h6>
+                                            <h6><a href="#">Electricians</a></h6>
+                                            <h6><a href="#">Equipment Operators The Th6des</a></ol>
+                                            <h6><a href="#">welders</a></h6>
+                                            <h6><a href="#">painters</a></h6>
+                                            <h6><a href="#">roofers</a></h6>
+                                            <h6><a href="#">floorers</a></h6>
+                                            <h6><a href="#">electricians Residential h6nstruction</a></ol>
+                                            <h6><a href="#">Industrial</a></h6>
+                                            <h6><a href="#">Electricians</a></h6>
+                                            <h6><a href="#">Plumbing</a></h6>
+                                            <h6><a href="#">Equipment Operators</a></h6>
+                                            <h6><a href="#">Scaffolders</a></h6>
+                                            <h6><a href="#">Oil and Gas Commercial Coh6tructions</a></ol>
+                                            <h6><a href="#">Industrial</h6>
+                                            <h6><a href="#"> Equipment Operators</a></h6>
+                                            <h6><a href="#">Dry Wall (nat distaster)</a><h6>
+                                            <h6><a href="#">Welders (nat disaster)</a></h6>
 
                                        </li>
                                         

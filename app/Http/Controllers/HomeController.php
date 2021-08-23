@@ -7,6 +7,9 @@ use Illuminate\Support\Facades\Auth;
 
 use App\Models\User;
 use App\Models\Food;
+use App\Models\employee;
+
+
 
 
 class HomeController extends Controller
@@ -23,6 +26,26 @@ class HomeController extends Controller
         $data = food::all();
         return view("ourmenu",compact("data"));
     }
+
+    public function employeeview()
+    {
+        $data = employee::all();
+        return view("employees",compact("data"));
+    }
+
+  
+
+    public function employeeprofile($id)
+    {
+        $data = employee::find($id);
+        return view("employeeprofile", compact("data"));
+    }
+ 
+
+   
+
+
+
     
     public function redirects()
     {

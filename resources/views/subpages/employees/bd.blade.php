@@ -130,13 +130,14 @@
                             <hr>
                             <p>Industrial Solar installation work, Supply Chain Logistics, Web Design, Delegation, Professional Labor union management, Managing Orders and inventory for Multi Billion Dollar Companies, Managing Quality Control for the food industry, head QC lead at multiple food quality control labs, Business management, consulting,
                                  lead concept drafter at multiple companies, started multiple companies</p><br>
-                                    <h5>Supply the chain</h5><br>
-                                    <h6>Logistics</h6>
-                                    <h6>Quality control</h6>
-                                    <h6>Design</h6>
-                                    <h6>Eye for detail</h6>
-                                    <h6>Staffing</h6>
-                                    <h6>Solar</h6>
+                                    
+                                    <div style="background-color: gray"><h5 >Supply the chain</h5></div><br>
+                                    <h6><a href="#">Logistics</a></h6>
+                                    <h6><a href="#">Quality control</a></h6>
+                                    <h6><a href="#">Design</a></h6>
+                                    <h6><a href="#">Eye for detail</a></h6>
+                                    <h6><a href="#">Staffing</a></h6>
+                                    <h6><a href="#">Solar</a></h6>
                              
                                  
                              
