@@ -20,33 +20,12 @@ class HomeController extends Controller
         $data = food::all();
         return view("home",compact("data"));
     }
-
     public function ourmenu()
     {
         $data = food::all();
         return view("ourmenu",compact("data"));
     }
 
-    public function employeeview()
-    {
-        $data = employee::all();
-        return view("employees",compact("data"));
-    }
-
-  
-
-    public function employeeprofile($id)
-    {
-        $data = employee::find($id);
-        return view("employeeprofile", compact("data"));
-    }
- 
-
-   
-
-
-
-    
     public function redirects()
     {
         $data = food::all();
@@ -62,4 +41,24 @@ class HomeController extends Controller
             return view('home',compact('data'));
         }
     }
+    
+    //employee
+    public function employeeview()
+    {
+        $data = employee::all();
+        return view("employees",compact("data"));
+    }
+    public function employeeprofile($id)
+    {
+        $data = employee::find($id);
+        return view("employeeprofile", compact("data"));
+    }
+
+
+   
+
+
+
+    
+   
 }

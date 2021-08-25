@@ -14,13 +14,13 @@ use App\Models\employee;
 class AdminController extends Controller
 {
 
+//user login
 
     public function user()
     {
         $data = user::all();
         return view("admin.user", compact("data"));
     }
-
     public function deleteuser($id)
     {
         $data = user::find($id);
@@ -29,28 +29,24 @@ class AdminController extends Controller
     }
 
 
-    // foods fieald
+// foods fieald
 
     public function foodmenu()
     {
         $data = food::all();
         return view("admin.foodmenu", compact("data"));
     }
-
     public function deletemenu($id)
     {
         $data = food::find($id);
         $data->delete();
         return redirect()->back();
     }
-
     public function updateview($id)
     {
         $data = food::find($id);
         return view("admin.updateview", compact("data"));
     }
-
-
     public function update(Request $request, $id)
     {
         $data = food::find($id);
@@ -72,8 +68,6 @@ class AdminController extends Controller
 
         return redirect()->back();
     }
-
-
     public function upload(Request $request)
     {
         $data = new food;
@@ -97,21 +91,19 @@ class AdminController extends Controller
     }
 
 
-    public function employedash()
-    {
-        
-        return view("admin.employedash");
-    }
 
-
+//employer
     public function employersdash()
     {
 
         return view("admin.employersdash");
     }
+    public function employerreg()
+    {
+        return view('employerreg');
+    }
 
 // business contact controllers
-
     public function businesscontact(Request $request)
     {
         $data = new businesscontact;
@@ -136,13 +128,11 @@ class AdminController extends Controller
 
         return redirect()->back();
     }
-
     public function bcdash(Request $request)
     {
         $data = businesscontact::all();
         return view("admin.bcdash", compact("data"));
     }
-
     public function deletebc($id)
     {
         $data = businesscontact::find($id);
@@ -150,18 +140,26 @@ class AdminController extends Controller
         return redirect()->back();
     }
 
+//employee
 
-
+    public function employedash()
+    {
+        
+        return view("admin.employedash");
+    }
     public function employeereg()
     {
         return view('employeereg');
     }
-
-
-    public function employeeregdash(Request $request)
+    public function employeeregdata(Request $request)
     {
         $data = new employee;
 
+        $image = $request->image;
+
+        $imagename = time() . '.' . $image->getClientOriginalExtension();
+        $request->image->move('employeeimage', $imagename);
+        $data->image = $imagename;
 
         $data->fname = $request->fname;
 
@@ -193,16 +191,6 @@ class AdminController extends Controller
         $data = employee::all();
         return view("admin.employedash", compact("data"));
     }
-
-
-    
-
-    public function employerreg()
-    {
-        return view('employerreg');
-    }
-    
-
-    
    
+      
 }

@@ -17,6 +17,7 @@ class CreateEmployeesTable extends Migration
             $table->id();
             $table->string("fname");
             $table->string("lname");
+            $table->string("image");
             $table->string("email")->unique();
             $table->string("emp_j");
             $table->string("emp_a");

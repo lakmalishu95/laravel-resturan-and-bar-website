@@ -1,27 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <title>Restaurant</title>
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
-
-    <link rel="stylesheet" href="assets/css/templatemo-klassy-cafe.css">
-
-    <link rel="stylesheet" href="assets/css/owl-carousel.css">
-
-    <link rel="stylesheet" href="assets/css/lightbox.css">
-</head>
+@include('head')
 
 <body>
 
@@ -156,11 +135,10 @@
                             @csrf
 
                             <div class="row">
+
                                 <div class="col-lg-12">
                                     <h4>Register here</h4>
                                 </div>
-
-
                                 <div class="col-lg-6 col-sm-12">
                                     <fieldset>
                                         <input name="fname" type="text" id="fname" placeholder="first Name :" required="">
@@ -171,8 +149,6 @@
                                         <input name="lname" type="text" id="lname" placeholder="last Name :" required="">
                                     </fieldset>
                                 </div>
-
-
                                 <div class="col-lg-12 col-sm-12">
                                     <fieldset>
                                         <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email Address" required="">
@@ -193,7 +169,6 @@
                                         <input name="emp_licen" type="text" id="fiald" placeholder="Relevant work licenses? :" required="">
                                     </fieldset>
                                 </div>
-
                                 <div class="col-lg-12 col-sm-12">
                                     <fieldset>
                                         <input name="emp_age" type="text" id="O21" placeholder="Are you over 21 ?" required="">
@@ -208,18 +183,17 @@
                                     <fieldset>
                                         <input name="emp_location" rows="6" type="text" class="form-control" id="validationDefault01"   placeholder="What is your City, State and zipcode where you need employment?" required ="">
                                     </fieldset>
-                                </div>
+                                </div>                                
                                 <div class="col-lg-12 col-sm-12">
                                     <fieldset>
                                         <input name="emp_referances" type="text" id="O21" placeholder=" Can you provide one or more referances? That we can contact" required="">
                                     </fieldset>
                                 </div><br><br>
-                                
-
-                               
-
-
-
+                                <div class="col-lg-12 col-sm-12">
+                                    <fieldset>
+                                        <input name="image" type="file" id="O21" placeholder=" add image" required="">
+                                    </fieldset>
+                                </div><br><br>
                                 <br><br>
                                 <div class="col-lg-12">
                                     <fieldset>
@@ -233,34 +207,7 @@
             </div>
         </div>
     </div>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-xs-12">
-                    <div class="right-text-content">
-                        <ul class="social-icons">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="logo">
-                        <a href="index.html"><img style="width: 100px;" src="assets/images/logo/Attachment_1627657541.jpeg" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xs-12">
-                    <div class="left-text-content">
-                        <p>designed by
-
-                            <br><a href="https://www.fiverr.com/kevinkrish95?public_mode=true">kevinkrish</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+   @include('footer')
     <!-- ***** Reservation Area Ends ***** -->
 
 

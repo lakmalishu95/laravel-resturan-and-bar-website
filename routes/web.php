@@ -69,8 +69,8 @@ Route::post("/uploadfood",[AdminController::class,"upload"]);
 
 //employee///////
 Route::get("/employedash",[AdminController::class,"employedash"]);
-Route::post("/employeereg",[AdminController::class,"employeeregdash"]);
-Route::get("/employeereg",[AdminController::class,"employeereg"]);
+Route::post("/employeereg",[AdminController::class,"employeeregdata"]);
+Route::get("/employeereg",[HomeController::class,"employeereg"]);
 Route::get("/employedash",[AdminController::class,"employedashview"]);
 
 // employee subpages
@@ -116,6 +116,9 @@ Route::get('/bar', function () {
 Route::get('/restaraunts', function () {
     return view('subpages.employers.restaraunts');
 });
+Route::get('/employerprofile', function () {
+    return view('employerprofile');
+});
 
 
 //business contact////
@@ -148,6 +151,7 @@ Route::get("/home",[HomeController::class,"index"]);
 Route::get("/ourmenu",[HomeController::class,"ourmenu"]);
 Route::get("/redirects",[HomeController::class,"redirects"]);
 Route::get("/employees",[HomeController::class,"employeeview"]);
+
 Route::get("/employeeprofile/{id}",[HomeController::class,"employeeprofile"]);
 
 
