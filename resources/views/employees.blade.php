@@ -4,7 +4,15 @@
 @include('head')
 
 <body>
-
+    
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    
+    </div>
 
 
     <!-- ***** Header Area Start ***** -->
@@ -108,7 +116,7 @@
                     </div>
                 </div>
             </div>           
-            <button class="btn btn-primary"><a style="color: white;" href="{{ url('/employecontact')}}">Register here</a></button><br><br>
+            <button class="btn btn-primary"><a style="color: white;" href="{{ url('/employecontact')}}">Register here -></a></button><br><br>
             <div class="row" style="padding-bottom: 50px;">
                 @foreach($data as $data)                
                 <div class="col-lg-3">
@@ -116,7 +124,7 @@
                         <div class="thumb">
                             <div class="overlay"></div>
                             <ul class="social-icons">
-                            <button class="btn btn-primary"><a style="color: white;" href="{{ url('employeeprofile',$data->id)}}">View Profile</a></button>
+                                <button class="btn btn-primary"><a style="color: white;" href="{{ url('employeeprofile',$data->id)}}">View Profile</a></button>
                             </ul>
                             <img src="/employeeimage/{{$data->image}}" alt="Chef #1">
                         </div>

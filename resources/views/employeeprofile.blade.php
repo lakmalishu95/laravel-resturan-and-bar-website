@@ -1798,7 +1798,7 @@
                 <div class="col-lg-4 offset-lg-4 text-center">
                     <div class="section-heading">
                         <h6></h6>
-                        <h2>EMPLOYEE  DETAILS</h2>
+                        <h2>{{$data->fname}} &nbsp; -> DETAILS</h2>
                     </div>
                 </div>
             </div>
@@ -1814,16 +1814,27 @@
                             <img src= "/employeeimage/{{$data->image}}"  alt="employee profile image">
                         </div>
                         <div class="down-content">
-                            <h4>{{$data->fname}} {{$data->lname}}</h4>
-                            <span>{{$data->email}}</span>
+                            
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                   
+                            <h5>Name : {{$data->fname}}  {{$data->lname}}</h5><br>
+                         
                         
-                            <h4>{{$data->fname}} </h4>
-                            <span>{{$data->email}}</span>
+                            <h5>Licence : {{$data->emp_licen}} </h5><br>
+
+                            <h5>Location : {{$data->emp_location}} </h5><br>
+
+                            <h4>Add review :</h4>
+                         
+                           
+                            <textarea name="emp_d1" rows="6" id="message" placeholder="Add review for this employee" required=""></textarea>
+                            <fieldset>
+                                        <button type="submit" id="form-submit" class="btn btn-secondary">Add</button>
+                                    </fieldset>
+                           
+                          
                      
                    
                 </div>

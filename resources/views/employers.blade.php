@@ -1,27 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <title>Restaurant</title>
+    @include('head')
 
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
-
-    <link rel="stylesheet" href="assets/css/templatemo-klassy-cafe.css">
-
-    <link rel="stylesheet" href="assets/css/owl-carousel.css">
-
-    <link rel="stylesheet" href="assets/css/lightbox.css">
-</head>
 <body>
+
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    
+    </div>
     
 <header class="header-area header-sticky">
 
@@ -114,7 +105,7 @@
 </header><br><br><br>
 
 
-<div class="section" id="chefs">
+<div class="section" id="chefs" style="margin-bottom: 50px;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 offset-lg-4 text-center">
@@ -131,26 +122,7 @@
                         <div class="thumb">
                             <div class="overlay"></div>
                             <ul class="social-icons">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            </ul>
-                            <img src="assets/images/chefs-01.jpg" alt="Chef #1">
-                        </div>
-                        <div class="down-content">
-                            <h4>Randy Walker</h4>
-                            <span>Pastry Chef</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="chef-item">
-                        <div class="thumb">
-                            <div class="overlay"></div>
-                            <ul class="social-icons">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                <button class="btn btn-primary"><a style="color: white;" href="{{ url('employerprofile')}}">View Profile</a></button>
                             </ul>
                             <img src="assets/images/chefs-02.jpg" alt="Chef #2">
                         </div>
@@ -160,106 +132,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="chef-item">
-                        <div class="thumb">
-                            <div class="overlay"></div>
-                            <ul class="social-icons">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google"></i></a></li>
-                            </ul>
-                            <img src="assets/images/chefs-03.jpg" alt="Chef #3">
-                        </div>
-                        <div class="down-content">
-                            <h4>Peter Perkson</h4>
-                            <span>Pancake Chef</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                <div class="col-lg-4">
-                    <div class="chef-item">
-                        <div class="thumb">
-                            <div class="overlay"></div>
-                            <ul class="social-icons">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            </ul>
-                            <img src="assets/images/chefs-01.jpg" alt="Chef #1">
-                        </div>
-                        <div class="down-content">
-                            <h4>Randy Walker</h4>
-                            <span>Pastry Chef</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="chef-item">
-                        <div class="thumb">
-                            <div class="overlay"></div>
-                            <ul class="social-icons">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                            </ul>
-                            <img src="assets/images/chefs-02.jpg" alt="Chef #2">
-                        </div>
-                        <div class="down-content">
-                            <h4>David Martin</h4>
-                            <span>Cookie Chef</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="chef-item">
-                        <div class="thumb">
-                            <div class="overlay"></div>
-                            <ul class="social-icons">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google"></i></a></li>
-                            </ul>
-                            <img src="assets/images/chefs-03.jpg" alt="Chef #3">
-                        </div>
-                        <div class="down-content">
-                            <h4>Peter Perkson</h4>
-                            <span>Pancake Chef</span>
-                        </div>
-                    </div>
-                </div>
+  
             </div>
         </div>
 </div >
 
-<footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-xs-12">
-                    <div class="right-text-content">
-                        <ul class="social-icons">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="logo">
-                        <a href="index.html"><img style="width: 100px;" src="assets/images/logo/Attachment_1627657541.jpeg" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xs-12">
-                    <div class="left-text-content">
-                        <p>designed by
+    @include('footer')
 
-                            <br><a href="https://www.fiverr.com/kevinkrish95?public_mode=true" >kevinkrish</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
 </body>
 </html>

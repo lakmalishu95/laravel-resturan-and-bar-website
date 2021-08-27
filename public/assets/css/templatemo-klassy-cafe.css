@@ -1205,7 +1205,7 @@ reservation
 #reservation {
   margin-top: 120px;
   padding: 120px 0px;
-  background-image: url(../images/reservation-bg.jpg);
+  background-image: url(../images/back.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1468,7 +1468,7 @@ footer
 footer {
   margin-top: 0px;
   padding: 50px 0px;
-  background-color: #444242;
+  background-color: #242424;
   
 }
 
@@ -1514,7 +1514,7 @@ footer .right-text-content ul li a {
   font-size: 20px;
   background-color: #fff;
   border-radius: 50%;
-  color: #f81717;
+  color: #3b3b3b;
   -webkit-transition: all 0.5s ease 0s;
   -moz-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;

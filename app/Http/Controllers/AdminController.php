@@ -103,6 +103,8 @@ class AdminController extends Controller
         return view('employerreg');
     }
 
+
+    
 // business contact controllers
     public function businesscontact(Request $request)
     {
@@ -192,5 +194,23 @@ class AdminController extends Controller
         return view("admin.employedash", compact("data"));
     }
    
-      
+    //employee search
+
+    public function searchemployee(Request $request)
+    {
+        $search=$request->search;
+        $data = employee::where('fname','Like','%'.$search.'%')->get();
+
+        return view('admin.employedash',compact('data'));   
+    }
+
+    //food item search
+
+    public function searchfood(Request $request)
+    {
+        $search=$request->search;
+        $data = food::where('title','Like','%'.$search.'%')->get();
+
+        return view('admin.foodmenu',compact('data'));   
+    }
 }

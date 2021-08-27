@@ -6,7 +6,14 @@
 <body>
 
     <!-- ***** Preloader End ***** -->
-
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    
+    </div>
 
     <!-- ***** Header Area Start ***** -->
 
@@ -211,37 +218,9 @@
             </div>
         </div>
     </div>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-xs-12">
-                    <div class="right-text-content">
-                        <ul class="social-icons">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="logo">
-                        <a href="index.html"><img style="width: 100px;" src="assets/images/logo/Attachment_1627657541.jpeg" alt=""></a>
-                    </div>
-                    <div class="logo">
-                        <a style="color:black" href="cajunstaffing.com">cajunstaffing 2021 llc</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xs-12">
-                    <div class="left-text-content">
-                        <p>designed by
+   
 
-                            <br><a href="https://www.fiverr.com/kevinkrish95?public_mode=true">kevinkrish</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    @include('footer')
     <!-- ***** Reservation Area Ends ***** -->
 
 

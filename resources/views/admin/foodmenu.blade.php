@@ -68,6 +68,16 @@
                             </div>
                         </div>
                     </div><br>
+                    <ul class="navbar-nav w-100">
+                    <li class="nav-item w-50">
+                        <form method="GET" action="{{url('/searchfood')}}"  class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
+                        @csrf
+                        <input style="color: white;" type="text" name="search" class="form-control" placeholder="Search Employee by first name">
+                        <button type="submit" class="btn btn-primary">search</button>
+                        </form>
+                
+                    </li>
+                    </ul>
                     <div class="row ">
                             <div class="col-12 grid-margin">
                                 <div class="card">

@@ -5,7 +5,14 @@
 <body>
 
     <!-- ***** Preloader End ***** -->
-
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    
+    </div>
 
     <!-- ***** Header Area Start ***** -->
 
@@ -207,6 +214,8 @@
             </div>
         </div>
     </div>
+
+
    @include('footer')
     <!-- ***** Reservation Area Ends ***** -->
 

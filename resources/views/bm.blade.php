@@ -4,6 +4,15 @@
 @include('head')
 
 <body>
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    
+    </div>
+
 <header class="header-area header-sticky">
 
     <div class="container-fluid">

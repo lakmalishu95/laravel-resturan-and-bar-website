@@ -109,6 +109,7 @@ Route::get("/emplyee",[AdminController::class,"user"]);
 Route::get("/employersdash",[AdminController::class,"employersdash"]);
 Route::get("/employerreg",[AdminController::class,"employerreg"]);
 
+
 //employers sub pages
 Route::get('/bar', function () {
     return view("subpages.employers.bar");
@@ -143,6 +144,14 @@ Route::get('/customerequest', function () {
     return view('subpages.bm.customrequest');
 });
 
+
+// Search employees
+
+Route::get('/searchemployee',[AdminController::class,"searchemployee"]);
+
+// Search food
+
+Route::get('/searchfood',[AdminController::class,"searchfood"]);
 
 
 //home controllers
