@@ -105,7 +105,10 @@ class HomeController extends Controller
     public function employeeprofile(Request $request, $id)
     {
         $data = employee::find($id);
-        $data1 = employee_review::where('employee_id','=','{$data->{id}}')->get();       
+         $p =$data->id;
+        $data1 = employee_review::where('employee_id', '=', $p)
+        ->get();
+
         return view("employeeprofile", compact("data","data1"));
     }
     

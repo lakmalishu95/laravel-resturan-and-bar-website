@@ -1838,7 +1838,7 @@
                             @foreach($data1 as $data1)
                             <ul class="list-group">
                                 <li class="list-group-item list-group-item-primary" > {{$data1->review}}</li> 
-                            </ul>
+                            </ul><br>
                             @endforeach
                                                        
                         </div>
