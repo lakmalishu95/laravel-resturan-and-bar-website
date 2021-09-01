@@ -1828,12 +1828,12 @@
 
                             <h4>Add review :</h4>
                          
-                           
-                            <textarea name="emp_d1" rows="6" id="message" placeholder="Add review for this employee" required=""></textarea>
-                            <fieldset>
-                                        <button type="submit" id="form-submit" class="btn btn-secondary">Add</button>
-                                    </fieldset>
-                           
+                           <form action="">
+                                <textarea name="emp_d1" rows="6" id="message" placeholder="Add review for this employee" required=""></textarea>
+                                <fieldset>
+                                    <button type="submit" id="form-submit" class="btn btn-secondary">Add</button>
+                                </fieldset>
+                            </form>
                           
                      
                    
@@ -1861,7 +1861,7 @@
                         <a href="index.html"><img style="width: 100px;" src="assets/images/logo/Attachment_1627657541.jpeg" alt=""></a>
                     </div>
                     <div class="logo">
-                        <a style="color:black" href="cajunstaffing.com">cajunstaffing 2021 llc</a>
+                        <a style="color:black" href="cajunstaffing.com">cajunstaffing@yahoo.com</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-xs-12">

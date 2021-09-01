@@ -13,10 +13,10 @@
                 </div>
                 <div class="col-lg-4">                  
                     <div class="logo">
-                        <a href="index.html"><img style="width: 100px;" src="assets/images/logo/Attachment_1627657541.jpeg" alt=""></a>
+                        <a href="index.html"><img style="width: 150px;" src="assets/images/logo-new-removebg-preview (1).png" alt=""></a>
                     </div>
                     <div class="logo">
-                        <a style="color:black" href="cajunstaffing.com">cajunstaffing 2021 llc</a>
+                        <a style="color:#8c8c8c" href="cajunstaffing.com">cajunstaffing@yahoo.com</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-xs-12">
@@ -66,3 +66,11 @@
             });
         });
     </script>
+
+  <!--navbar js -->
+    <script src="navbar/assets/js/jquery.min.js"></script>
+    <script src="navbar/assets/js/jquery.dropotron.min.js"></script>
+    <script src="navbar/assets/js/browser.min.js"></script>
+    <script src="navbar/assets/js/breakpoints.min.js"></script>
+    <script src="navbar/assets/js/util.js"></script>
+    <script src="navbar/assets/js/main.js"></script>

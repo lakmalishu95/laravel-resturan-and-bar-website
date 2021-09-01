@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <base href="/public">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -1697,29 +1698,41 @@
 
     </style>
 </head>
-
 <body >
 
     <!-- ***** Preloader End ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    
+    </div>
 
 
     <!-- ***** Header Area Start ***** -->
 
     <header class="header-area header-sticky">
+
         <div class="container-fluid">
+
             <div class="col-12">
+
+
+
                 <nav class="main-nav">
 
                     <!-- ***** Logo Start ***** -->
 
                     <a href="home" class="logo">
-                        <img src="assets/images/logo-new.jpg" class="mx-auto d-block" style="width: 150px;  padding-top: 20px; padding-left: 20px;">
+                        <img src="assets/images/logo-new-removebg-preview (1).png" class="mx-auto d-block" style="width: 150px;  padding-top: 20px; padding-left: 20px;">
                     </a>    
 
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li class="scroll-to-section"><a href="{{ url('/home')}}" class="active">Home</a></li>
+                        <li class="submenu"><a href="{{ url('/home')}}"     >Home</a></li>
                         <li class="submenu">
                             <a href="{{url('/employers')}}">EMPLOYERS</a>
                             <ul>
@@ -1737,7 +1750,7 @@
                         <li class="submenu">
                             <a href="{{ url('/businessmanagement') }}">Business Management </a>
                             <ul>
-                                <li><a href="{{ url('/business-starter-packages') }}">Business Starter Packages</a></li>
+                                <li class="submenu"><a href="{{ url('/business-starter-packages') }}">Business Starter Packages</a></li>
                                 <li><a href="{{ url('/consultation') }}">Consultation</a></li>
                                 <li><a href="{{ url('/merchandise') }}">Merchandise</a></li>
                                 <li><a href="{{ url('/contracts') }}">Contracts</a></li>
@@ -1759,10 +1772,17 @@
                                 <li><a href="{{ url('/newpage') }}">New Page </a></li>
                             </ul>
                         </li>
-                        <li><a href="{{ url('/ourmenu') }}">Our Memu </a></li>
-                        <li><a href="{{ url('/service') }}">Services</a></li>
-                        <li><a href="{{ url('/ourmission') }}">Our Mission</a></li>
-                        <li><a href="{{ url('/partners') }}">3 Partners </a></li>
+                        <li class="submenu"><a href="{{ url('/oilandgas')}}" >OIL and GAS</a></li>
+                        
+                        <li class="submenu"><a href="{{ url('/businessmanagement') }}">More..</a>
+                            <ul>
+                                <li><a href="{{ url('/ourmenu') }}">Our Memu </a></li>
+                                <li><a href="{{ url('/service') }}">Services</a></li>
+                                <li><a href="{{ url('/ourmission') }}">Our Mission</a></li>
+                                <li><a href="{{ url('/partners') }}">3 Partners </a></li>
+                            </ul>
+                        </li>
+                        
                         <li>
                             @if (Route::has('login'))
 
@@ -1787,7 +1807,9 @@
                     <!-- ***** Menu End ***** -->
                 </nav>
             </div>
-        </div>  
+        </div>
+
+
     </header><br><br>
 
 
@@ -1798,7 +1820,7 @@
                 <div class="col-lg-4 offset-lg-4 text-center">
                     <div class="section-heading">
                         <h6></h6>
-                        <h2>{{$data->fname}} &nbsp; -> DETAILS</h2>
+                        <h2>{{$data->fname}} &nbsp; -> DETAILS</h2><hr>
                     </div>
                 </div>
             </div>
@@ -1808,72 +1830,41 @@
             <div class="row" style="padding-bottom: 50px;"> 
                 <div class="col-lg-6">
                     <div class="chef-item">
-                        <div class="thumb">
-                          
-                       
+                        <div class="thumb">                      
                             <img src= "/employeeimage/{{$data->image}}"  alt="employee profile image">
                         </div>
                         <div class="down-content">
-                            
+                            <h4>Reviews ></h4><br>
+                            @foreach($data1 as $data1)
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-primary" > {{$data1->review}}</li> 
+                            </ul>
+                            @endforeach
+                                                       
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                            <h5>Name : {{$data->fname}}  {{$data->lname}}</h5><br>
-                         
-                        
+                            <h5>Name : {{$data->fname}}  {{$data->lname}}</h5><br>                                              
                             <h5>Licence : {{$data->emp_licen}} </h5><br>
-
-                            <h5>Location : {{$data->emp_location}} </h5><br>
-
-                            <h4>Add review :</h4>
+                            <h5>Location : {{$data->emp_location}} </h5>
                          
-                           
-                            <textarea name="emp_d1" rows="6" id="message" placeholder="Add review for this employee" required=""></textarea>
-                            <fieldset>
-                                        <button type="submit" id="form-submit" class="btn btn-secondary">Add</button>
-                                    </fieldset>
-                           
-                          
-                     
-                   
+                                                     
+                            <form style="margin-left: -30px;" id="contact" action="{{url('/employeerev',$data->id)}}" method="post" enctype="multipart/form-data">
+                            @csrf    
+                                <label for="">Add review -></label>                       
+                                <div class="form-outline">
+                                    <textarea name="review" class="form-control"  id="textAreaExample3" rows="2"></textarea>                                   
+                                </div>
+                                <button style="margin-top: 5px; width:150px; float:right;" type="submit" id="form-submit" class="btn btn-secondary">Add</button>
+                            </form>      
                 </div>
             
             </div>
         </div>
     </div >
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-xs-12">
-                    <div class="right-text-content">
-                        <ul class="social-icons">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="logo">
-                        <a href="index.html"><img style="width: 100px;" src="assets/images/logo/Attachment_1627657541.jpeg" alt=""></a>
-                    </div>
-                    <div class="logo">
-                        <a style="color:black" href="cajunstaffing.com">cajunstaffing 2021 llc</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xs-12">
-                    <div class="left-text-content">
-                        <p>designed by
-
-                            <br><a href="https://www.fiverr.com/kevinkrish95?public_mode=true">kevinkrish</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+   @include('footer')
 
 </body>
 </html>

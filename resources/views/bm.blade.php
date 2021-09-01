@@ -109,7 +109,7 @@
             <div class="col-lg-12 col-md-12 col-xs-12">
                 <div class="left-text-content">
                     <div class="section-heading">
-                        <h2>Business Management</h2>
+                        <h2>Business Management</h2><hr>
                     </div>
                     <p>Welcome to our page for building, managing, and consulting with your business. It is our greatest joy in life to help others grow into, and realize their full potential when they have a solid backing. 
                             Your business is one pillar of the plan, you are the other pillar, and we would love to be the third pillar.
@@ -142,41 +142,48 @@
                             <h6>Car wash business $1,900 -$2,200</h6>
                             <h6>Logistics business $1,800-$2,200</h6>
                             <h6>Other business package $2,700</h6><br>
-                            <h5>SEO: 10% of sales minimum $1,000 or $10,000 business profit per month, 8 hours of SEO for four weeks</h5>
-                            <p>•Contract assistance $3,000 ( 8 hours of zoom meetings over three weeks )
+                            <h5>SEO: 10% of sales minimum $1,000 or $10,000 business profit per month, 8 hours of SEO for four weeks</h5><br>
+                            <p>• Contract assistance $3,000 ( 8 hours of zoom meetings over three weeks ) </p> <br>
 
-                            
+                                    <h5>Clothing</h5> <hr> 
+                                    <p>We can source quality cheap merchandise that it is 100% to sell when printed
+                                        If you would like to inquire about other items click here 
+                                        If you would like to describe the item listed below that you require please click
+                                        here so we can make your vision a reality
+                                        All design work comes with 5 free redesigns and reviews after which we will
+                                        discuss the viability of the project and take only a $20 fee because we do 
+                                        try our best and at that point you would know 
+                                        Small edits such as errors like scale that are sent first as an example 
+                                        then changed are not counted towards the 5 of course they are just examples
+                                        rough drafts so don’t worry about that
+                                        An edit is if you tell us specific words to add and have us edit it, if
+                                        you ask us to change the color from your initial request, if you
+                                        The provided services are only for business or companies or
+                                        LLCs or any business, not individuals.
+                                     </p>
 
-                            Clothing 
 
-                            "We can source quality cheap merchandise that it is 100% to resell by doing this🦍 
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-success"> Combo Package: $300  10 shirt designs $100 off </li>  <br>                                  
+                                <li class="list-group-item list-group-item-success">Cargo Shorts/ professional shorts/ let’s  talk about which shorts/ </li><br>
 
-                            If you would like to inquire about other items click here 
+                                <li class="list-group-item list-group-item-success">Shirt designs $150-$250 this takes a very creative process you are paying not for
+                                    my time but for my expertise and resources and creative mind please keep in mind 
+                                    the artistic process and love and care we put into your product </li><br>
 
-                            If you would like to describe the item listed below that you require please click here so we can make your vision a reality
+                                <li class="list-group-item list-group-item-success">Industrial clothing design $300 for 2 designs this is very much more complex and
+                                    requires more resources to source the correct and needed materials</li> <br>
 
-                            All design work comes with 5 free redesigns and reviews after which we will discuss the viability of the project and take only a $20 fee because we do try our best and at that point you would know 
+                                <li class="list-group-item list-group-item-success">Commercial Business clothing t shirts, hats, bikinis $360 for 2 designs</li> <br>
 
-                            Small edits such as errors like scale that are sent first as an example then changed are not counted towards the 5 of course they are just examples rough drafts so don’t worry about that
+                                <li class="list-group-item list-group-item-success">Hire us as your monthly designer with 5 designs per month for only $290 </li><br>
 
-                            An edit is if you tell us specific words to add and have us edit it, if you ask us to change the color from your initial request, if you
+                                <li class="list-group-item list-group-item-success">All other clothing please inquire here</li> <br>      
 
-                            The provided services are only for business or companies or LLCs or any business, not indiviuals </p>
-                            <p>Combo Package: $300                                      -Cargo Shorts/ professional shorts/ let’s  talk about which shorts/ 
+                                <li class="list-group-item list-group-item-success">Sunglasses design: $65</li> <br>
 
-                            Shirt designs $150-$250 this takes a very creative process you are paying not for my time but for my expertise and resources and creative mind please keep in mind the artistic process and love and care we put into your product
-
-                            Industrial clothing design $300 for 2 designs this is very much more complex and requires more resources to source the correct and needed materials 
-
-                            Commercial Business clothing t shirts, hats, bikinis $360 for 2 designs
-
-                            Hire us as your monthly designer with 5 designs per month for only $290 
-
-                            All other clothing please inquire here       
-
-                            Sunglasses design: $65
-
-                            Sock designs </p>
+                                <li class="list-group-item list-group-item-success">Sock designs</li><br><br> 
+                             </ul>
 
                             
                 </div>

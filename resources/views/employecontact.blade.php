@@ -118,18 +118,12 @@
                         </div>
                         <p>please obtain our phone number after short email correspondence </p>
                         <div class="row">
-                            <div class="col-lg-12">
-                                <div class="phone">
-                                    <i class="fa fa-phone"></i>
-                                    <h4>Phone Numbers</h4>
-                                    <span>><a href="#">080-090-0880</a></span>
-                                </div><br><br>
-                            </div><br>
+                            
                             <div class="col-lg-12">
                                 <div class="message">
                                     <i class="fa fa-envelope"></i>
                                     <h4>Emails</h4>
-                                    <span><a href="#">cajunemployees@gmail.com</a></span>
+                                    <span><a href="#">cajunstaffing@yahoo.com</a></span>
                                 </div>
                             </div>
                         </div>
@@ -168,7 +162,7 @@
                                 </div>
                                 <div class="col-lg-12 col-sm-12">
                                     <fieldset>
-                                        <input name="emp_a" type="text" id="emp_a" placeholder="Commercial or Residential or NA :" required="">
+                                        <input name="emp_a" type="text" id="emp_a" placeholder="Commercial or Residential or industrial :" required="">
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-12 col-sm-12">

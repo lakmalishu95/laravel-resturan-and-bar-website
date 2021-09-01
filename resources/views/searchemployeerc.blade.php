@@ -117,16 +117,14 @@
                 </div>
             </div> 
        
-                
-                <span><button style="margin-left: 15px;" class="btn btn-primary"><a style="color: white;" href="{{ url('/employecontact')}}">Register here -></a></button></span><hr><br><br>
+                <span><button style="margin-left: 15px;" class="btn btn-primary"><a style="color: white;" href="{{ url('/employecontact')}}">Register here -></a></button></span>
                 <li class="nav-item w-50">
                     <form method="GET" action="{{url('/searchemployeerc')}}"  class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
                         @csrf
-                        
-                        <input style="color: black; margin-right:5px;" type="text" name="search" class="form-control" placeholder="Search Who Commercial or Residential or industrial">
-                        <button type="submit" class="btn btn-primary">search</button><hr>
-                    </form>   <hr>          
-                </li>><br>
+                        <input style="color: black; margin-right:3px;" type="text" name="search" class="form-control" placeholder="Search Who Commercial or Residential or NA">
+                        <button type="submit" class="btn btn-primary">search</button>
+                    </form>              
+                </li><br>
                 
                       
             
@@ -158,4 +156,4 @@
 
 </body>
 
-</html>
+</html> 

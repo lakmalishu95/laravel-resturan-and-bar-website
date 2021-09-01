@@ -26,6 +26,8 @@ class CreateEmployeesTable extends Migration
             $table->string("emp_d1");
             $table->string("emp_location");
             $table->string("emp_referances");
+            $table->string("review");
+
             $table->timestamps();
         });
     }

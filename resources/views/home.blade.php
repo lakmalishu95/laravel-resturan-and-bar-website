@@ -32,13 +32,13 @@
                     <!-- ***** Logo Start ***** -->
 
                     <a href="home" class="logo">
-                        <img src="assets/images/logo-new.jpg" class="mx-auto d-block" style="width: 150px;  padding-top: 20px; padding-left: 20px;">
+                        <img src="assets/images/logo-new-removebg-preview (1).png" class="mx-auto d-block" style="width: 200px;  padding-top: 20px; padding-left: 20px;">
                     </a>    
 
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li class="scroll-to-section"><a href="{{ url('/home')}}" class="active">Home</a></li>
+                        <li class="submenu"><a href="{{ url('/home')}}"     >Home</a></li>
                         <li class="submenu">
                             <a href="{{url('/employers')}}">EMPLOYERS</a>
                             <ul>
@@ -78,10 +78,17 @@
                                 <li><a href="{{ url('/newpage') }}">New Page </a></li>
                             </ul>
                         </li>
-                        <li><a href="{{ url('/ourmenu') }}">Our Memu </a></li>
-                        <li><a href="{{ url('/service') }}">Services</a></li>
-                        <li><a href="{{ url('/ourmission') }}">Our Mission</a></li>
-                        <li><a href="{{ url('/partners') }}">3 Partners </a></li>
+                        <li class="submenu"><a href="{{ url('/oilandgas')}}" >OIL and GAS</a></li>
+                        
+                        <li class="submenu"><a href="{{ url('/businessmanagement') }}">More..</a>
+                            <ul>
+                                <li><a href="{{ url('/ourmenu') }}">Our Memu </a></li>
+                                <li><a href="{{ url('/service') }}">Services</a></li>
+                                <li><a href="{{ url('/ourmission') }}">Our Mission</a></li>
+                                <li><a href="{{ url('/partners') }}">3 Partners </a></li>
+                            </ul>
+                        </li>
+                        
                         <li>
                             @if (Route::has('login'))
 

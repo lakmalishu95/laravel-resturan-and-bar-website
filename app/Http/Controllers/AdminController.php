@@ -29,7 +29,7 @@ class AdminController extends Controller
     }
 
 
-// foods fieald
+// foods fieald admin dashboard
 
     public function foodmenu()
     {
@@ -88,6 +88,13 @@ class AdminController extends Controller
         $data->save();
 
         return redirect()->back();
+    }
+    public function searchfood(Request $request)
+    {
+        $search=$request->search;
+        $data = food::where('title','Like','%'.$search.'%')->get();
+
+        return view('admin.foodmenu',compact('data'));   
     }
 
 
@@ -149,45 +156,7 @@ class AdminController extends Controller
         
         return view("admin.employedash");
     }
-    public function employeereg()
-    {
-        return view('employeereg');
-    }
-    public function employeeregdata(Request $request)
-    {
-        $data = new employee;
-
-        $image = $request->image;
-
-        $imagename = time() . '.' . $image->getClientOriginalExtension();
-        $request->image->move('employeeimage', $imagename);
-        $data->image = $imagename;
-
-        $data->fname = $request->fname;
-
-        $data->lname = $request->lname;
-
-        $data->email = $request->email;
-        
-        $data->emp_j = $request->emp_j;
-
-        $data->emp_a = $request->emp_a;
-
-        $data->emp_licen = $request->emp_licen;
-
-        $data->emp_age = $request->emp_age;
-
-        $data->emp_d1 = $request->emp_d1;
-
-        $data->emp_location = $request->emp_location;
-
-        $data->emp_referances = $request->emp_referances;
-
-        $data->save();
-
-        return redirect()->back();
-
-    }
+    
     public function employedashview()
     {
         $data = employee::all();
@@ -206,11 +175,5 @@ class AdminController extends Controller
 
     //food item search
 
-    public function searchfood(Request $request)
-    {
-        $search=$request->search;
-        $data = food::where('title','Like','%'.$search.'%')->get();
-
-        return view('admin.foodmenu',compact('data'));   
-    }
+    
 }

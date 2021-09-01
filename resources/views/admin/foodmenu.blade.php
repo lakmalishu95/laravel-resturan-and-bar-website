@@ -32,7 +32,7 @@
                         <div class="col-md-6 grid-margin stretch-card">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4 class="card-title">Add to food item</h4><hr style="background-color: gray;">
+                                    <h4 class="card-title">Add to food item</h4><hr style="background-color: gray;"><br>
 
                                     <form  action="{{url('/uploadfood')}}" method="post" enctype="multipart/form-data">
                                     @csrf
@@ -72,7 +72,7 @@
                     <li class="nav-item w-50">
                         <form method="GET" action="{{url('/searchfood')}}"  class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
                         @csrf
-                        <input style="color: white;" type="text" name="search" class="form-control" placeholder="Search Employee by first name">
+                        <input style="color: white;" type="text" name="search" class="form-control" placeholder="Search by food item name">
                         <button type="submit" class="btn btn-primary">search</button>
                         </form>
                 

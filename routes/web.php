@@ -48,6 +48,10 @@ Route::get('/service', function () {
     return view('service');
 });
 
+Route::get('/oilandgas',function() {
+    return view('oilandgas');
+});
+
 Route::get('/partners', function () {
     return view('partners');
 });
@@ -69,9 +73,15 @@ Route::post("/uploadfood",[AdminController::class,"upload"]);
 
 //employee///////
 Route::get("/employedash",[AdminController::class,"employedash"]);
-Route::post("/employeereg",[AdminController::class,"employeeregdata"]);
-Route::get("/employeereg",[HomeController::class,"employeereg"]);
 Route::get("/employedash",[AdminController::class,"employedashview"]);
+
+Route::post("/employeereg",[HomeController::class,"employeeregdata"]);
+
+Route::get("/searchemployeerc",[HomeController::class,'searchemployeerc']);
+Route::post("/employeerev/{id}",[HomeController::class,"employeerev"]);
+
+
+
 
 // employee subpages
 Route::get('/foodindustry', function () {
