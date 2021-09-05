@@ -51,26 +51,8 @@
 
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
-    <script>
-        $(function() {
-            var selectedClass = "";
-            $("p").click(function() {
-                selectedClass = $(this).attr("data-rel");
-                $("#portfolio").fadeTo(50, 0.1);
-                $("#portfolio div").not("." + selectedClass).fadeOut();
-                setTimeout(function() {
-                    $("." + selectedClass).fadeIn();
-                    $("#portfolio").fadeTo(50, 1);
-                }, 500);
-
-            });
-        });
-    </script>
+    
 
   <!--navbar js -->
-    <script src="navbar/assets/js/jquery.min.js"></script>
-    <script src="navbar/assets/js/jquery.dropotron.min.js"></script>
-    <script src="navbar/assets/js/browser.min.js"></script>
-    <script src="navbar/assets/js/breakpoints.min.js"></script>
-    <script src="navbar/assets/js/util.js"></script>
-    <script src="navbar/assets/js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>

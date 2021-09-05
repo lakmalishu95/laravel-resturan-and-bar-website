@@ -21,6 +21,10 @@ class CreateBusinesscontactsTable extends Migration
             $table->string("bname");
             $table->string("category");
             $table->string("eorc");
+            $table->string("seek");
+            $table->string("image");
+            $table->string("location");
+            $table->string("operate");
             $table->string("helpful");
             $table->timestamps();
         });

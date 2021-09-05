@@ -102,46 +102,17 @@ class AdminController extends Controller
 //employer
     public function employersdash()
     {
-
         return view("admin.employersdash");
     }
-    public function employerreg()
-    {
-        return view('employerreg');
-    }
-
 
     
-// business contact controllers
-    public function businesscontact(Request $request)
-    {
-        $data = new businesscontact;
 
-
-        $data->fname = $request->fname;
-
-        $data->lname = $request->lname;
-
-        $data->email = $request->email;
-        
-        $data->bname = $request->bname;
-
-        $data->category = $request->category;
-
-        $data->eorc = $request->eorc;
-
-        $data->helpful = $request->helpful;
-
-
-        $data->save();
-
-        return redirect()->back();
-    }
     public function bcdash(Request $request)
     {
         $data = businesscontact::all();
         return view("admin.bcdash", compact("data"));
     }
+
     public function deletebc($id)
     {
         $data = businesscontact::find($id);
@@ -162,8 +133,6 @@ class AdminController extends Controller
         $data = employee::all();
         return view("admin.employedash", compact("data"));
     }
-   
-    //employee search
 
     public function searchemployee(Request $request)
     {
@@ -173,7 +142,7 @@ class AdminController extends Controller
         return view('admin.employedash',compact('data'));   
     }
 
-    //food item search
+    
 
     
 }

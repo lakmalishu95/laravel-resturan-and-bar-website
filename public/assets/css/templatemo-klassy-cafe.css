@@ -203,17 +203,18 @@ header
 
 .background-header {
   background-color: #fff;
-  height: 80px!important;
+  height: 40px!important;
   position: fixed!important;
   top: 0px;
   left: 0px;
   right: 0px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.15)!important;
+  
 }
 
 .background-header .logo,
 .background-header .main-nav .nav li a {
-  color: #1e1e1e!important;
+  color: #cacaca!important;
 }
 
 .background-header .main-nav .nav li:hover a {
@@ -225,7 +226,7 @@ header
 }
 
 .header-area {
-  background-color: rgb(59, 59, 59);
+  background-color: rgb(56, 56, 56);
   position: absolute;
   top: 0px;
   left: 0px;
@@ -260,6 +261,8 @@ header
 
 .background-header .main-nav .logo {
   line-height: 75px;
+  
+  
 }
 
 .background-header .nav {
@@ -308,6 +311,7 @@ header
 
 .header-area .main-nav .nav li a {
   color: #2a2a2a;
+  padding-right: 5px;
 }
 
 .header-area .main-nav .nav li:hover a,
@@ -334,11 +338,11 @@ header
   position: absolute;
   right: 18px;
   
-  top: 122px;
+  top: 12px;
 }
 
 .background-header .main-nav .nav li.submenu:after {
-  color: #2a2a2a;
+  color: #f3f3f3;
 }
 
 .header-area .main-nav .nav li.submenu ul {
@@ -512,11 +516,17 @@ header
 }
 
 .header-area.header-sticky {
-  min-height: 170px;
+  min-height: 100px;
 }
 
-.header-area .nav {
-  margin-top: 30px;
+.header-area .main-nav img {
+  margin-top: 8px;
+  
+  width: 170px;
+
+  
+ 
+  
 }
 
 .header-area.header-sticky .nav li a.active {
@@ -533,7 +543,7 @@ header
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1320px) {
   .header-area .main-nav .logo {
     color: #1e1e1e;
   }
@@ -632,10 +642,25 @@ header
   }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 1320px) {
   .header-area .main-nav .nav {
     display: flex !important;
   }
+}
+@media (max-width: 600px) {
+  .header-area .main-nav img {
+    margin-top: 18px; 
+    width: 150px;
+  }
+
+}
+@media (max-width: 380px) {
+  .header-area .main-nav img {
+    margin-top: 33px; 
+    width: 100px;
+    float: left;
+  }
+
 }
 
 
@@ -1203,7 +1228,7 @@ reservation
 }
 
 #reservation {
-  margin-top: 120px;
+  margin-top: 70px;
   padding: 120px 0px;
   background-image: url(../images/back.jpg);
   background-position: center center;
@@ -1467,6 +1492,7 @@ footer
 
 footer {
   margin-top: 0px;
+  margin-bottom: -50px;
   padding: 50px 0px;
   background-color: #242424;
   
@@ -1538,6 +1564,7 @@ responsive
   }
   .header-area .main-nav .nav li.submenu:after {
     right: 3px;
+    padding-right: 30px;
   }
   .header-area .main-nav .nav li.submenu {
     padding-right: 15px;
