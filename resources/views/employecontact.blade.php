@@ -52,19 +52,28 @@
                                 <div class="col-lg-12">
                                     <h4>Register here</h4>
                                 </div>
-                                <div class="col-lg-6 col-sm-12">
+                                @csrf
+                                <div class="form-group">        
+                                    @if(session()->has('message'))
+                                        <div style="background-color:red;" class="alert alert-dark">
+                                            
+                                            {{session()->get('message')}}
+                                        </div>
+                                    @endif
+                                </div>  
+                                <div class="col-lg-12 col-sm-12">
                                     <fieldset>
                                         <input name="fname" type="text" id="fname" placeholder="first Name :" required="">
                                     </fieldset>
                                 </div>
-                                <div class="col-lg-6 col-sm-12">
+                                <div class="col-lg-12 col-sm-12">
                                     <fieldset>
                                         <input name="lname" type="text" id="lname" placeholder="last Name :" required="">
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-12 col-sm-12">
                                     <fieldset>
-                                        <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email Address" required="">
+                                        <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Enter your Valied Email Address :" required="">
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-12 col-sm-12">
@@ -84,7 +93,7 @@
                                 </div>
                                 <div class="col-lg-12 col-sm-12">
                                     <fieldset>
-                                        <input name="emp_age" type="text" id="O21" placeholder="Are you over 21 ?" required="">
+                                        <input name="emp_age" type="text" id="O21" placeholder="Age : ?" required="">
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-12">
@@ -107,6 +116,9 @@
                                         <input name="image" type="file" id="O21" placeholder=" add image" required="">
                                     </fieldset>
                                 </div><br><br>
+
+                                
+                                                
                                 <br><br>
                                 <div class="col-lg-12">
                                     <fieldset>

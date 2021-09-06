@@ -142,6 +142,13 @@ class AdminController extends Controller
         return view('admin.employedash',compact('data'));   
     }
 
+    public function empdelete($id)
+    {
+        $data = employee::find($id);
+        $data->delete();
+        return redirect()->back();
+
+    }
     
 
     

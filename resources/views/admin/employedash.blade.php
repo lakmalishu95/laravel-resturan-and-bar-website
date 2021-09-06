@@ -51,6 +51,8 @@
                                 <table class="table">
                                   <thead>
                                     <tr>
+                                      <th>Delete</th>
+                                      <th>Aprove</th>
                                       <th> First Name </th>
                                       <th>Last Name </th>
                                       <th> Email </th>
@@ -61,13 +63,18 @@
                                       <th>work history </th>
                                       <th> Location </th>
                                       <th> Referances </th>
-                                      <th>Action</th>
+                                      
                                     </tr>
                                   </thead>
                                   <tbody>
                                     @foreach($data as $data)
                                     <tr>
-                                   
+                                      <td>
+                                        <div class="badge badge-outline-danger"><a href="{{url('/empdelete',$data->id)}}"> Delete </a></div>
+                                      </td>
+                                      <td>
+                                        <div class="badge badge-outline-success"><a href="{{url('/empaprove',$data->id)}}"> Aprove </a></div>
+                                      </td>
                                       <td>  {{$data->fname}} </td>
                                       <td>  {{$data->lname}}</td>
                                       <td>  {{$data->email}} </td>
@@ -79,9 +86,7 @@
                                       <td>  {{$data->emp_location}} </td>
                                       <td>  {{$data->emp_referances}}</td>
                                       
-                                      <td>
-                                        <div class="badge badge-outline-success">Approved</div>
-                                      </td>
+                                      
                                     </tr>
                                     @endforeach
                                

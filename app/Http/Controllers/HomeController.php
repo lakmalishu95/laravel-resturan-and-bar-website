@@ -36,10 +36,10 @@ class HomeController extends Controller
         {
             return view('admin.adminhome');
         }
-        elseif($usertype=='employee'){
+        elseif($usertype=='0'){
             return view('home',compact('data'));
         }
-        elseif($usertype=='employer')
+        elseif($usertype=='1')
         {
             return view('home', compact('data'));
         }
@@ -54,36 +54,56 @@ class HomeController extends Controller
     public function employeereg(Request $request)
     {
         $data = new employee;
+    
+         
+    
+    
+        $employee = employee::where('email', '=', $request->input('email'))->first();
 
-        $image = $request->image;
 
-        $imagename = time() . '.' . $image->getClientOriginalExtension();
-        $request->image->move('employeeimage', $imagename);
-        $data->image = $imagename;
+            if ($employee === null) {
 
-        $data->fname = $request->fname;
+                
 
-        $data->lname = $request->lname;
-
-        $data->email = $request->email;
+                $image = $request->image;
+                $imagename = time() . '.' . $image->getClientOriginalExtension();
+                $request->image->move('employeeimage', $imagename);
+                $data->image = $imagename;
         
-        $data->emp_j = $request->emp_j;
+                $data->fname = $request->fname;
+        
+                $data->lname = $request->lname; 
 
-        $data->emp_a = $request->emp_a;
+                $data->email = $request->email;  
 
-        $data->emp_licen = $request->emp_licen;
+                $data->emp_j = $request->emp_j;
 
-        $data->emp_age = $request->emp_age;
+                $data->emp_a = $request->emp_a;
+        
+                $data->emp_licen = $request->emp_licen;
+        
+                $data->emp_age = $request->emp_age;
+        
+                $data->emp_d1 = $request->emp_d1;
 
-        $data->emp_d1 = $request->emp_d1;
-        $data->review = $request->review;
-
-        $data->emp_location = $request->emp_location;
-
-        $data->emp_referances = $request->emp_referances;
-        $data->save();
-        return redirect('register');
+                $data->review = $request->review;
+        
+                $data->emp_location = $request->emp_location;
+                       
+                $data->emp_referances = $request->emp_referances;
+                
+                $data->save();
+                return redirect('register');               
+            }
+            else { 
+                return redirect()->back()->with('message' , 'this email is already use ');
+            }
+     
+        
+        
     }
+       
+       
     public function employeeview()
     {
         $data = employee::all();     
@@ -109,6 +129,7 @@ class HomeController extends Controller
     }
     public function employeerev(Request $request, $id)
     {
+        
         $data = employee::find($id);
         $data1 = new employee_review;
         $data2 = user::all();

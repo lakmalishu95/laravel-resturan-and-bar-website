@@ -1,10 +1,14 @@
 <x-guest-layout >
-    <x-jet-authentication-card style="background-color: red;">
+    <x-jet-authentication-card>
         <x-slot name="logo">
             <img src="assets/images/logo-new-removebg-preview (1).png" class="mx-auto d-block"  style="width: 200px;">
         </x-slot>
+         <h3 style="background-color: red; text-align:center; padding:15px; font-weight: 1000;"> If you have send the Contact information Only you can Register..</h3><br>
         
+        <h1 style="text-align: center; background-color: white; padding:5px; font-weight: bold;">Register Form</h1><hr style="border-top: 3px solid black; margin-left:158px; width:80px;">
+
         <x-jet-validation-errors class="mb-4" />
+        
        
         <form method="POST" action="{{ route('register') }}">
             @csrf
@@ -13,7 +17,7 @@
 
             <div class="mt-4">
                 <x-jet-label for="email" value="{{ __('Email') }}" />
-                <x-jet-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
+                <x-jet-input id="email" class="block mt-1 w-full" type="email" placeholder="Enter your Email "  name="email" :value="old('email')" required />
             </div>
 
             <div class="mt-4">

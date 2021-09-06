@@ -4,11 +4,11 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController; 
 
-
 //home controllers
 Route::get("/",[HomeController::class,"index"]);
 Route::get("/home",[HomeController::class,"index"]);
 Route::get("/redirects",[HomeController::class,"redirects"]);
+
 
 //users
 Route::get("/users",[AdminController::class,"user"]);
@@ -20,6 +20,7 @@ Route::get("/employedash",[AdminController::class,"employedash"]);
 Route::get("/employedash",[AdminController::class,"employedashview"]);
 Route::get('/searchemployee',[AdminController::class,"searchemployee"]);
 Route::get("/emplyee",[AdminController::class,"user"]);
+Route::get('empdelete/{id}', [AdminController::class, 'empdelete']);
 
 Route::post("/employeereg",[HomeController::class,"employeereg"]);
 Route::get("/employees",[HomeController::class,"employeeview"]);
