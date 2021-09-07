@@ -53,12 +53,21 @@
                                 <div class="col-lg-12">
                                     <h4>Business partner contact</h4>
                                 </div>
-                                <div class="col-lg-6 col-sm-12">
+                                @csrf
+                                <div class="form-group">        
+                                    @if(session()->has('message'))
+                                        <div style="background-color:red;" class="alert alert-dark">
+                                            
+                                            {{session()->get('message')}}
+                                        </div>
+                                    @endif
+                                </div>  
+                                <div class="col-lg-12 col-sm-12">
                                     <fieldset>
                                         <input name="fname" type="text" id="fname" placeholder="first Name :" required="">
                                     </fieldset>
                                 </div>
-                                <div class="col-lg-6 col-sm-12">
+                                <div class="col-lg-12 col-sm-12">
                                     <fieldset>
                                         <input name="lname" type="text" id="lname" placeholder="last Name :" required="">
                                     </fieldset>

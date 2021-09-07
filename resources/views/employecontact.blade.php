@@ -83,7 +83,13 @@
                                 </div>
                                 <div class="col-lg-12 col-sm-12">
                                     <fieldset>
-                                        <input name="emp_a" type="text" id="emp_a" placeholder="Commercial or Residential or industrial :" required="">
+                                        
+                                        <select class="form-select" id="emp_a" name="emp_a" aria-label="Default select example" required="">
+                                            <option selected>Chose your Service</option>
+                                            <option value="Residential">Residential</option>
+                                            <option value="Commercial">Commercial</option>
+                                            <option value="industrial">industrial</option>
+                                    </select>
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-12 col-sm-12">

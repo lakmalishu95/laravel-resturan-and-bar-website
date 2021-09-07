@@ -55,45 +55,40 @@ class HomeController extends Controller
     {
         $data = new employee;
     
-         
-    
-    
         $employee = employee::where('email', '=', $request->input('email'))->first();
 
+        if ($employee === null) {
 
-            if ($employee === null) {
-
-                
-
-                $image = $request->image;
-                $imagename = time() . '.' . $image->getClientOriginalExtension();
-                $request->image->move('employeeimage', $imagename);
-                $data->image = $imagename;
+            $image = $request->image;
+            $imagename = time() . '.' . $image->getClientOriginalExtension();
+            $request->image->move('employeeimage', $imagename);
+            $data->image = $imagename;
         
-                $data->fname = $request->fname;
+            $data->fname = $request->fname;
         
-                $data->lname = $request->lname; 
+            $data->lname = $request->lname; 
 
-                $data->email = $request->email;  
+            $data->email = $request->email;  
 
-                $data->emp_j = $request->emp_j;
+            $data->emp_j = $request->emp_j;
 
-                $data->emp_a = $request->emp_a;
+            $data->emp_a = $request->emp_a;
         
-                $data->emp_licen = $request->emp_licen;
+            $data->emp_licen = $request->emp_licen;
         
-                $data->emp_age = $request->emp_age;
+            $data->emp_age = $request->emp_age;
         
-                $data->emp_d1 = $request->emp_d1;
+            $data->emp_d1 = $request->emp_d1;
 
-                $data->review = $request->review;
+            $data->review = $request->review;
         
-                $data->emp_location = $request->emp_location;
+            $data->emp_location = $request->emp_location;
                        
-                $data->emp_referances = $request->emp_referances;
+            $data->emp_referances = $request->emp_referances;
                 
-                $data->save();
-                return redirect('register');               
+            $data->save();
+            return redirect('register');
+
             }
             else { 
                 return redirect()->back()->with('message' , 'this email is already use ');
@@ -113,7 +108,6 @@ class HomeController extends Controller
     {
         $search=$request->search;
         $data = employee::where('emp_a','Like','%'.$search.'%')  
-        ->where('fname', '=', 'sendit')
         ->get();
 
         return view('searchemployeerc',compact('data'));  
@@ -165,37 +159,46 @@ class HomeController extends Controller
     {
         $data = new businesscontact;
 
-        $image = $request->image;
+        $employer = businesscontact::where('email', '=', $request->input('email'))->first();
+        if($employer == null) {
 
-        $imagename = time() . '.' . $image->getClientOriginalExtension();
-        $request->image->move('bcimage', $imagename);
-        $data->image = $imagename;
+            $image = $request->image;
+
+            $imagename = time() . '.' . $image->getClientOriginalExtension();
+            $request->image->move('bcimage', $imagename);
+            $data->image = $imagename;
 
 
-        $data->fname = $request->fname;
+            $data->fname = $request->fname;
 
-        $data->lname = $request->lname;
+            $data->lname = $request->lname;
 
-        $data->email = $request->email;
+            $data->email = $request->email;
+            
+            $data->bname = $request->bname;
+
+            $data->category = $request->category;
+
+            $data->eorc = $request->eorc;
+
+            $data->helpful = $request->helpful;
+
+            $data->seek = $request->seek;
+
+            $data->location = $request->location;
+
+            $data->seek = $request->seek;
+
+
+            $data->save();
+
+            return redirect('register');
+        }
+        else{
+            return redirect()->back()->with('message' , 'this email is already use ');
+        }
+
         
-        $data->bname = $request->bname;
-
-        $data->category = $request->category;
-
-        $data->eorc = $request->eorc;
-
-        $data->helpful = $request->helpful;
-
-        $data->seek = $request->seek;
-
-        $data->location = $request->location;
-
-        $data->seek = $request->seek;
-
-
-        $data->save();
-
-        return redirect('register');
     }   
     public function employers()
     {
