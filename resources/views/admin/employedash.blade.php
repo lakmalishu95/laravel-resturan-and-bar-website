@@ -40,6 +40,24 @@
                 </form>
                 
               </li>
+              @csrf
+              <div class="form-group">        
+                @if(session()->has('message'))
+                <div class="alert alert-danger">
+                <button type="button" class="close" data-dismiss="alert"></button>
+                {{session()->get('message')}}
+                  </div>
+                 @endif
+              </div> 
+              @csrf
+              <div class="form-group">        
+                @if(session()->has('message1'))
+                <div class="alert alert-danger">
+                <button type="button" class="close" data-dismiss="alert"></button>
+                {{session()->get('message1')}}
+                  </div>
+                 @endif
+              </div> 
              
             </ul>
                       <div class="row ">
@@ -73,7 +91,7 @@
                                         <div class="badge badge-outline-danger"><a href="{{url('/empdelete',$data->id)}}"> Delete </a></div>
                                       </td>
                                       <td>
-                                        <div class="badge badge-outline-success"><a href="{{url('/empaprove',$data->id)}}"> Aprove </a></div>
+                                        <div class="badge badge-outline-success"><a href="{{url('/employeeaprove',$data->id)}}"> Aprove </a></div>
                                       </td>
                                       <td>  {{$data->fname}} </td>
                                       <td>  {{$data->lname}}</td>

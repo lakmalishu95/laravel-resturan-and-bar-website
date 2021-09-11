@@ -21,6 +21,7 @@ Route::get("/employedash",[AdminController::class,"employedashview"]);
 Route::get('/searchemployee',[AdminController::class,"searchemployee"]);
 Route::get("/emplyee",[AdminController::class,"user"]);
 Route::get('empdelete/{id}', [AdminController::class, 'empdelete']);
+Route::get('/employeeaprove/{id}',[AdminController::class, 'employeeaprove']);
 
 Route::post("/employeereg",[HomeController::class,"employeereg"]);
 Route::get("/employees",[HomeController::class,"employeeview"]);

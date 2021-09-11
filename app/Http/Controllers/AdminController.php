@@ -8,6 +8,7 @@ use App\Models\User;
 use App\Models\Food;
 use App\Models\Businesscontact;
 use App\Models\employee;
+use App\Models\employeeaprove;
 
 
 
@@ -150,6 +151,37 @@ class AdminController extends Controller
 
     }
     
+    public function employeeaprove( $id)
+    {
+        $data = employee::find($id);
+        $data2 = new employeeaprove;
+        
+
+        $employeeaprove = employeeaprove::where('email', '=', $data->email)->first();
+
+       
+
+        if($employeeaprove == null){
+
+            
+            $data2->fname = $data->fname;
+            $data2->lname = $data->lname;
+            $data2->email = $data->email;
+            $data2->emp_location = $data->emp_location;
+
+            $data2->save();
+            return redirect()->back()->with('message', 'employee aproved to login');
+
+        }
+        else {
+
+            return redirect()->back()->with('message1', 'This'. '{{$data->fname}}'. 'employee is already have aproved');
+
+        }
+
+        
+
+    }
 
     
 }
